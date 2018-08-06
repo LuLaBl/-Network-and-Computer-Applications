@@ -1,3 +1,13 @@
-\BOOKMARK [1][-]{section.1}{The Elsevier article class}{}% 1
-\BOOKMARK [1][-]{section.2}{Front matter}{}% 2
-\BOOKMARK [1][-]{section.3}{Bibliography styles}{}% 3
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Related Work}{}% 2
+\BOOKMARK [1][-]{section.3}{Background}{}% 3
+\BOOKMARK [1][-]{section.4}{Fall-detection system prototype}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Architecture}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Sensor fusion}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Generation of test-events}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.4}{Detected problems}{section.4}% 8
+\BOOKMARK [1][-]{section.5}{Example application of STAMP as hazard analysis method}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{Introducing STAMP}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.2}{STAMP - Hazard analysis}{section.5}% 11
+\BOOKMARK [1][-]{section.6}{Conclusion \046 Future work}{}% 12
+\BOOKMARK [1][-]{section.7}{Bibliography styles}{}% 13
