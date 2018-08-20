@@ -21,6 +21,20 @@ L.~{La Blunda}, M.~Wagner, The usage of body area networks for fall-detection,
   {Alekseev, S.} and {Dowland, P. S.} and {Ghita, B.} and {Schneider, O.},
   Frankfurt am Main, 2016, pp. 159--163.
 
+\bibitem{Igual2013}
+R.~Igual, C.~Medrano, I.~Plaza, Challenges, issues and trends in fall detection
+  systems, Biomedical engineering online 12 (2013) 66.
+\newblock \href {http://dx.doi.org/10.1186/1475-925X-12-66}
+  {\path{doi:10.1186/1475-925X-12-66}}.
+
+\bibitem{Li2009}
+Q.~Li, J.~A. Stankovic, M.~A. Hanson, A.~T. Barth, J.~Lach, G.~Zhou, Accurate,
+  Fast Fall Detection Using Gyroscopes and Accelerometer-Derived Posture
+  Information, IEEE, In Wearable and Implantable Body Sensor Networks, 2009.
+  BSN 2009. Sixth International Workshop on (pp. 138-143), 2009.
+\newblock \href {http://dx.doi.org/10.1109/BSN.2009.46}
+  {\path{doi:10.1109/BSN.2009.46}}.
+
 \bibitem{Feynman1963118}
 R.~Feynman, F.~{Vernon Jr.}, The theory of a general quantum system interacting
   with a linear dissipative system, Annals of Physics 24 (1963) 118--173.

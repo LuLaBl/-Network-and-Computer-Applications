@@ -103,14 +103,31 @@ Finally, in section \ref{sec:conclusion} a conclusion about this ongoing researc
 
 \section{Related Work}
 \label{sec:relatedwork}
-The author names and affiliations could be formatted in two ways:
-\begin{enumerate}[(1)]
-\item Group the authors per affiliation.
-\item Use footnotes to indicate the affiliations.
-\end{enumerate}
-See the front matter of this document for examples. You are recommended to conform your choice to the journal you are submitting to.
+In this section an overview about several fall-detection approaches is given. There are several techniques which can be applied to detect fall-events. Igual et al. \cite{Igual2013} illustrates the following different types of fall-detection  systems:
+\begin{itemize}
+	\item Context-aware systems
+	\item Wearable systems
+\end{itemize}
+The functionality of context-aware systems depends on the environment, since the sensors and actuators must be installed in the living area (apartment, nursing home) in order to detect possible fall situations. The video-based context-aware solutions have the advantage to provide an accurate and reliable detection of falls with a fast assistance, but these systems have an issue regarding privacy. Patients using this solution are non-stop monitored and this is not well accepted by many. Additionally, the high purchase price is an obstacle for many patients and the dependency on the environment makes this approach useless, because it would not detect fall-events happening outside the networked area.
 
+The other category of fall-detection systems analyzed by Igual et al. \cite{Igual2013} contains wearable solutions worn on the body and are based on Body Area Networks (BAN). This solution is capable to provide a fall-detection which is independent from the environment in contrast to context-aware systems. The analysis of Igual et al. \cite{Igual2013} illustrates wearable fall-detection systems using the sensor fusion method which comprises accelerometer and gyroscope data and built-in systems in form of smart phone sensors. For both categories of fall-detection solutions (context-aware \& wearable solution) several techniques were used. The following methods were applied for context-aware systems:
+\begin{itemize}
+	\item Image processing and threshold-based recognition
+	\item Image processing and classification models
+\end{itemize}
+The techniques used for the fall-detection in wearable solutions are the following:
+\begin{itemize}
+	\item Threshold-based approach
+	\item Fall-detection based on machine learning
+\end{itemize}
 
+Taking into consideration the fact that it is an essential advantage to focus on wearable solution because of the system's functional independence the scientific work of Li et al. \cite{Li2009} will be explained subsequently. The solution of Li et al. \cite{Li2009} includes two wearable sensor nodes which are based on a BAN. These sensor nodes consist of an accelerometer and gyroscope and they are placed on the chest (Node A) and on the thigh (Node B, see Figure \ref{fig:LietAl-Architecture}).
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.06]{Images/Stankovic_papa2}
+	\caption[System architecture according to Li et al.]{System architecture according to Li et al. \cite{Li2009}}
+	\label{fig:LietAl-Architecture}
+\end{figure}
 \section{Background}
 \label{sec:background}
 
