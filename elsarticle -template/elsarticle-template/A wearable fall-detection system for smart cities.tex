@@ -140,6 +140,8 @@ Li et al. distinguish between two different motion sequences which are used for 
 	\end{itemize}
 \end{itemize}
 A 3-phase Algorithm for fall-detection is proposed by Li et al. to decrease the computational effort of the micro controller. The first phase of the fall-detection algorithm examines if the person is in a static or dynamic position. If the analyzed position coincides with a static postures in the second phase it will be checked whether it corresponds to lying. If lying position, it will be checked if the transition to this posture was intentional or unintentional (3.Phase). To determine it, the previous 5 seconds of data is used. In the case it was unintentional the event will be classified as a fall. The proposed approach in \cite{Li2009} uses a threshold based technique that is applied in the different phases of the algorithm. The weakness of this approach is to differentiate between jumping into bed and falling against wall with seated posture.
+
+
 \section{Background}
 \label{sec:background}
 
