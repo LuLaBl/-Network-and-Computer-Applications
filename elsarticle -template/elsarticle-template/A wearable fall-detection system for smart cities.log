@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  21 AUG 2018 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  22 AUG 2018 20:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -324,28 +324,28 @@ File: Images/Stankovic_papa2.jpg Graphic file (type jpg)
 <use Images/Stankovic_papa2.jpg>
 Package pdftex.def Info: Images/Stankovic_papa2.jpg  used on input line 124.
 (pdftex.def)             Requested size: 179.94453pt x 319.9014pt.
- [5 <./Images/Stankovic_papa2.jpg>] [6]
-(./A wearable fall-detection system for smart cities.bbl [7])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
+ [5 <./Images/Stankovic_papa2.jpg>] [6] [7]
+(./A wearable fall-detection system for smart cities.bbl [8])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
 
 (./A wearable fall-detection system for smart cities.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `"A wearable fall-detection system for smart 
 cities".out' has not changed.
 (rerunfilecheck)             Checksum: E65D46C8B48664AD855752E2350C86C2;815.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 5864 strings out of 492649
- 85522 string characters out of 6133385
- 182348 words of memory out of 5000000
- 9665 multiletter control sequences out of 15000+600000
+ 5879 strings out of 492649
+ 85771 string characters out of 6133385
+ 182394 words of memory out of 5000000
+ 9676 multiletter control sequences out of 15000+600000
  8142 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,7n,30p,951b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,7n,30p,2379b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist
@@ -356,11 +356,11 @@ sfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm
 b><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2018/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "A wearable fall-detection system for smart cities.pdf" (8 pa
-ges, 2628087 bytes).
+Output written on "A wearable fall-detection system for smart cities.pdf" (9 pa
+ges, 2633316 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
+ 212 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
  115 words of extra memory for PDF output out of 10000 (max. 10000000)
 

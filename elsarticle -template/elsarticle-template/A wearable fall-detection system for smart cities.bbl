@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{\texttt{#1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
@@ -19,7 +19,7 @@ L.~{La Blunda}, M.~Wagner, Fall-detection belt based on body area networks, in:
 L.~{La Blunda}, M.~Wagner, The usage of body area networks for fall-detection,
   in: Proceedings of the eleventh International Network Conference (INC 2016),
   {Alekseev, S.} and {Dowland, P. S.} and {Ghita, B.} and {Schneider, O.},
-  Frankfurt am Main, 2016, pp. 159--163.
+  Frankfurt am Main (Germany), 2016, pp. 159--163.
 
 \bibitem{Igual2013}
 R.~Igual, C.~Medrano, I.~Plaza, Challenges, issues and trends in fall detection
@@ -34,6 +34,28 @@ Q.~Li, J.~A. Stankovic, M.~A. Hanson, A.~T. Barth, J.~Lach, G.~Zhou, Accurate,
   BSN 2009. Sixth International Workshop on (pp. 138-143), 2009.
 \newblock \href {http://dx.doi.org/10.1109/BSN.2009.46}
   {\path{doi:10.1109/BSN.2009.46}}.
+
+\bibitem{colladomachine}
+A.~Collado-Villaverde, M.~D. R-Moreno, D.~F. Barrero, D.~Rodriguez, Machine
+  learning approach to detect falls on elderly people using sound, in:
+  S.~Benferhat, K.~Tabia, M.~Ali (Eds.), Advances in Artificial Intelligence:
+  From Theory to Practice, Springer International Publishing, Cham, 2017, pp.
+  149--159.
+
+\bibitem{Luder2009}
+M.~L{\"u}der, G.~Bieber, R.~Salomon, Sturzerkennung mittels {L}uftdruck- und
+  {B}eschleunigungssensorik {A}ir {P}ressure- and {A}cceleration-{B}ased {F}all
+  {D}etector: 2. {D}eutscher {AAL}-{K}ongress mit {A}usstellung -
+  {T}echnologien, {A}nwendungen ; 27. - 28. {J}anuary 2009 in {B}erlin;
+  {T}agungsbandbeitr{\"a}ge.
+
+\bibitem{Gjoreski2014}
+H.~Gjoreski, A.~Rashkovska, S.~Kozina, M.~Lustrek, M.~Gams, Telehealth using
+  ecg sensor and accelerometer, in: 2014 37th International Convention on
+  Information and Communication Technology, Electronics and Microelectronics
+  (MIPRO), IEEE, 2014, pp. 270--274.
+\newblock \href {http://dx.doi.org/10.1109/MIPRO.2014.6859575}
+  {\path{doi:10.1109/MIPRO.2014.6859575}}.
 
 \bibitem{Feynman1963118}
 R.~Feynman, F.~{Vernon Jr.}, The theory of a general quantum system interacting
