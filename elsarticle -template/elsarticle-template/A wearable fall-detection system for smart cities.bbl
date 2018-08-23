@@ -41,6 +41,8 @@ A.~Collado-Villaverde, M.~D. R-Moreno, D.~F. Barrero, D.~Rodriguez, Machine
   S.~Benferhat, K.~Tabia, M.~Ali (Eds.), Advances in Artificial Intelligence:
   From Theory to Practice, Springer International Publishing, Cham, 2017, pp.
   149--159.
+\newblock \href {http://dx.doi.org/10.1007/978-3-319-60042-0_18}
+  {\path{doi:10.1007/978-3-319-60042-0_18}}.
 
 \bibitem{Luder2009}
 M.~L{\"u}der, G.~Bieber, R.~Salomon, Sturzerkennung mittels {L}uftdruck- und
@@ -56,6 +58,14 @@ H.~Gjoreski, A.~Rashkovska, S.~Kozina, M.~Lustrek, M.~Gams, Telehealth using
   (MIPRO), IEEE, 2014, pp. 270--274.
 \newblock \href {http://dx.doi.org/10.1109/MIPRO.2014.6859575}
   {\path{doi:10.1109/MIPRO.2014.6859575}}.
+
+\bibitem{Kozina}
+S.~Kozina, H.~Gjoreski, M.~Gams, M.~Lu{\v{s}}trek, Efficient activity
+  recognition and fall detection using accelerometers, in: International
+  Competition on Evaluating AAL Systems through Competitive Benchmarking, Vol.
+  386, Springer, pp. 13--23.
+\newblock \href {http://dx.doi.org/10.1007/978-3-642-41043-7\_2}
+  {\path{doi:10.1007/978-3-642-41043-7\_2}}.
 
 \bibitem{Feynman1963118}
 R.~Feynman, F.~{Vernon Jr.}, The theory of a general quantum system interacting

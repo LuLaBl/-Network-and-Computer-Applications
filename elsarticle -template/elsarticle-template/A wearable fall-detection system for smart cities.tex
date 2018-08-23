@@ -3,6 +3,7 @@
 % review for
 
 \usepackage{lineno,hyperref}
+\usepackage{amsmath}
 \modulolinenumbers[5]
 
 \journal{Journal of Networks and Computer Applications}
@@ -147,7 +148,28 @@ A different approach to detect fall-events is presented by Lüder et al. \cite{L
 
 \section{Background}
 \label{sec:background}
+The fall-detection prototype is based on the approach proposed in \cite{Gjoreski2014, Kozina}. To detect a fall-event a typical physical behavior is used which comprises the following the phases (see Figure \ref{fig:fallKozina}):
+\begin{itemize}
+	\item Pre-fall-phase 
+	\item Falling phase
+	\item Impact phase
+	\item Post-fall phase
+\end{itemize}
+The pre-fall phase illustrates a stationary position of the person where the measured acceleration is around 1g (9.81$m/s^{2}$). During the falling phase the  acceleration decreases close to 0g (0$m/s^{2}$), which depicts a similar behavior to a free fall. Upon the impact (impact phase), the acceleration reaches his maximum value for a short period of time. This signalizes that the person has suffered an impact. Subsequently, the acceleration is decreasing to around 1g (9.81$m/s^{2}$) which represents the post-fall phase because after a fall the person is lying down. To apply this fall-detection pattern the accelerometer data of the sensor nodes is used. Important to know is that for the impact detection the acceleration magnitude is used which is calculated with the following formula ~\ref{eq:acel} and to determine the body's orientation the single axis values of the accelerometer ($\alpha_x$, $\alpha_y$, $\alpha_z$) are analyzed:
 
+\begin{equation}\label{eq:acel}
+\alpha = \sqrt{\alpha_{x}^{2} + \alpha_{y}^{2} + \alpha_{z}^{2}}
+\end{equation}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=1]{images/KozinaImpact}
+	\caption[Acceleration during impact]{Acceleration during impact according to Kozina et al. ~\cite{Kozina}}
+	\label{fig:fallKozina}
+\end{figure}
+Taking into consideration the body orientation the single acceleration axis ($\alpha_x$, $\alpha_y$, $\alpha_z$) are essential to determine the person's body orientation. Assuming that the person is in a standing position (static posture), the x-acceleration ($\alpha_x$) corresponds to 1g (9.81$m/s^{2}$) and the other two axis ($\alpha_y$, $\alpha_z$) would be close to 0g (0$m/s^{2}$). This is a reference for a standing position. As soon as the person changes his posture, the gravitational force will act on one of the other two axis ($\alpha_y$, $\alpha_z$) and the x-acceleration will be 0g (0$m/s^{2}$). Combining this information with the acceleration magnitude (see Equation \ref{eq:acel}) the system is able to detect the fall and additionally determine the type of fall.
+
+here pannurat and li et al test fall types
 \section{Fall-detection system prototype}
 \label{sec:fall-detectionPrototype}	
 
