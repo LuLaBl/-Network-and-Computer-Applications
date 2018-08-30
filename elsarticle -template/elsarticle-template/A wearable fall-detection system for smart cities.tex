@@ -97,7 +97,7 @@ To counteract these life-threatening events fast assistance is necessary due to 
 \end{figure}
 A prototype in form of a belt was developed which includes an Electrocardiogram (ECG) - harness and is based on a five sensor nodes Body Area Network (BAN). Each sensor node of the belt acquires continuously acceleration data including time stamp and the sensor node of the ECG-harness provides the analog value of the voltage including time stamp. In case of a fall the system should be capable to autonomously call the emergency services. Applying sensor fusion of physical and medical sensors we expect to improve the reliability of fall-detection and possibly fall-prevention. Another expectation is that the integration of medical sensors may facilitate the classification of different fall-types. In terms of smart cities our expectancy is to significantly provide an important e-health service for smart cities which is an essential life-saver for the population.
 
-The paper is structured as follows. Section \ref{sec:relatedwork} describes the related work regarding fall-detection. In this section a short overview about existing solutions and different approaches for fall-detection is given. Section \ref{sec:background} will describe the basic principles on which our ongoing fall-detection research is based. In the successive section (Section \ref{sec:fall-detectionPrototype}) a detailed description of the fall-detection prototype, including the usage of sensor are introduced. Additionally, this section contains the generation of test events which includes the results of the fall-analysis and detected problems. Section \ref{sec:STAMP} will introduce the Hazard analysis method STAMP which is applied on the fall-detection prototype.
+The paper is structured as follows. Section \ref{sec:relatedwork} describes the related work regarding fall-detection. In this section a short overview about existing solutions and different approaches for fall-detection is given. Section \ref{sec:background} will describe the basic principles on which our ongoing fall-detection research is based. In the successive section (Section \ref{sec:fall-detectionPrototype}) a detailed description of the fall-detection prototype, including the usage of the ECG-sensor are introduced. Additionally, this section contains the generation of test events which includes the results of the fall-analysis and detected problems. Section \ref{sec:STAMP} will introduce the Hazard analysis method STAMP which is applied on the fall-detection prototype.
 Finally, in section \ref{sec:conclusion} a conclusion about this ongoing research is given, including some indications for improvement which could be applied in the future work.
 
 \section{Related Work}
@@ -175,12 +175,54 @@ To ensure reliable fall detection, the system must be able to detect various typ
 \label{sec:fall-detectionPrototype}	
 
 \subsection{Architecture}
-The hardware architecture plays an important role in the development process to ensure the reliable functioning of the system. A first prototype was developed in this ongoing research which is introduced in \cite{LaBlunda.2016, LaBlunda.2016b}. In this paper an improved prototype will be introduced which. In order to guarantee a reliable functioning of the system, the hardware architecture plays an important role in the development process.  This paper presents an improved version of the prototype, which includes essential improvements that contribute to reliable operation of the system. Additionally, the improved hardware design meets the requirement for patient compliance. This aspect should be taken into consideration to provide a user friendly design which facilitates the freedom of movement for the user. As a safety critical system for medical purposes, a redundant hardware design should be provided to protect the system against a total system failure which would have severe consequences for the user in case of fall-events. Referring to J{\"a}ms{\"a} et al. \cite{jamsa2014fall} the best approach is to position the accelerometer near to the waist.
+\label{subsec:Architecture}	
+The hardware architecture plays an important role in the development process to ensure the reliable functioning of the system. A first prototype was developed in this ongoing research which is introduced in \cite{LaBlunda.2016, LaBlunda.2016b}. In this paper an improved prototype will be introduced which. In order to guarantee a reliable functioning of the system, the hardware architecture plays an important role in the development process.  This paper presents an improved version of the prototype, which includes essential improvements that contribute to reliable operation of the system. Additionally, the improved hardware design meets the requirement for patient compliance. This aspect should be taken into consideration to provide a user friendly design which facilitates the freedom of movement for the user. As a safety critical system for medical purposes, a redundant hardware design should be provided to protect the system against a total system failure which would have severe consequences for the user in case of fall-events. Referring to J{\"a}ms{\"a} et al. \cite{jamsa2014fall} the best approach is to position the accelerometer near to the waist. Taking into consideration these aspects a wearable belt solution was developed which is based on a four sensor nodes BAN (see Figure \ref{fig:BanBelt}).
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.41]{images/belt}
+	\caption[Four sensor nodes BAN - Belt]{Four sensor nodes BAN - Belt \cite{LaBlunda.2016, LaBlunda.2016b}}
+	\label{fig:BanBelt}
+\end{figure}
+
+The four sensor nodes (S1 - S4) positioned on the belt are acting as peripherals and are continuously acquiring acceleration data which is sent via Bluetooth Low Energy to the smart phone (central device). The dataset consists of the following information: 
+\begin{center}
+ SensorID, X-Acceleration, Y-Acceleration, Z-Acceleration
+\end{center}
+\begin{itemize}
+	\item \textbf{SensorID} $\rightarrow$ is used to identify to which sensor node the incoming dataset belongs to.
+	\item \textbf{X-Acceleration} $\rightarrow$ represent the acceleration value in X-direction which the includes the unit m/$s^2$.
+	\item \textbf{Y-Acceleration} $\rightarrow$ represent the acceleration value in Y-direction which the includes the unit m/$s^2$.
+	\item \textbf{Z-Acceleration} $\rightarrow$ represent the acceleration value in Z-direction which the includes the unit m/$s^2$.
+\end{itemize}
+The central device receives the incoming sensor data which will be stored in separate text files to evaluate the event. 
+The belt solution reflects the above criteria of a safety-critical systems. The proposed architecture (see Figure \ref{fig:BanBelt}) is based on a mirroring principle of the opposite sensor nodes which provide identical acceleration values, only with different signs. If a sensor node fails during operation, the opposite node can be used as a reference to ensure accurate evaluation of the event. Another positive consideration is the improvement of our system because of this hardware design. Considering the following scheme (see Figure \ref{fig:ReferenceScheme}) this fall-detection belt solution facilitates the recognition of different fall-event types. 
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.28]{images/axis}
+	\caption[Three axis reference scheme]{Three axis reference scheme \cite{LaBlunda.2016, LuigiMasterThesis}}
+	\label{fig:ReferenceScheme}
+\end{figure}
+
+The positioning of the nodes around the hip allows a more precise fall-characterization. Assuming that a person does a left rotation which leads to a frontal impact to the ground (forward fall), the single acceleration values ($\alpha_x$,  $\alpha_y$,  $\alpha_z$) could be used to determine the body's orientation and the acceleration magnitude (see Equation \ref*{eq:acel}) to detect the impact to the ground, as described in the previous section \ref{sec:background}. Taking into consideration the test protocol stated in section \ref{sec:background} typical fall-events (e.g. rolling out of the bed) in nursing homes and hospitals can be detected by this solution.
+
+
 \subsection{Sensor fusion}
-ECG
+\label{subsec:sensorfusion}	
+Analyzing the literature regarding fall detection, it was pointed out that the existing solutions show certain weaknesses in the reliable detection of falls. Considering Gjoreski et al. approach, his results with the fusion of physical sensors and the ECG sensor show a reliable fall detection. Especially the evaluation of the ECG signal leads to an essential improvement of the system's accuracy.  In \cite{Gjoreski2014} the ECG signal could be used to distinguish between different postures. The inclusion of medical parameters could even provide a fall prediction that would represent a significant progress in health care and prevent fatal injuries. Based on these results the proposed fall-detection belt  has been upgraded with a portable 3-channel ECG-sensor which provides an analog signal to the microcontroller. The successive illustration depicts the BAN structure of the update prototype architecture.
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.43]{images/ECG-BAN}
+	\caption[ECG - BAN]{ECG - BAN}
+	\label{fig:ECGBAN}
+\end{figure}
+The updated BAN includes four sensor nodes placed on the belt (S1 -S4) and an additional node on the chest (S5). These five nodes are acting as peripherals and they are continuously providing sensor data to the smart phone (central) via Bluetooth Low Energy. The sensor nodes S1 to S4 send the acceleration data and the ECG-sensor sends analog values (representation of ECG-signal) to the central device. Fusing these information the central device analyzes the events for possible fall-events.
+
+Before the ECG-sensor can be fully integrated into the prototype, the following tasks had be solved:   
+
 
 \subsection{Generation of test-events}
-Lorena's part
+Lorena's part  -->>> fall test events , highlight the test with synchronization problem
 
 \subsection{Detected problems}
 
