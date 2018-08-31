@@ -200,7 +200,7 @@ The belt solution reflects the above criteria of a safety-critical systems. The 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[scale=0.28]{images/axis}
-	\caption[Three axis reference scheme]{Three axis reference scheme \cite{LaBlunda.2016, LuigiMasterThesis}}
+	\caption[Three axis reference scheme]{Three axis reference scheme \cite{LaBlunda.2016,LuigiMasterThesis}}
 	\label{fig:ReferenceScheme}
 \end{figure}
 
@@ -218,8 +218,16 @@ Analyzing the literature regarding fall detection, it was pointed out that the e
 \end{figure}
 The updated BAN includes four sensor nodes placed on the belt (S1 -S4) and an additional node on the chest (S5). These five nodes are acting as peripherals and they are continuously providing sensor data to the smart phone (central) via Bluetooth Low Energy. The sensor nodes S1 to S4 send the acceleration data and the ECG-sensor sends analog values (representation of ECG-signal) to the central device. Fusing these information the central device analyzes the events for possible fall-events.
 
-Before the ECG-sensor can be fully integrated into the prototype, some tasks had be solved.  The first task to solve isA continuous recording of the ECG is required, even during the person's daily activities. The first task will be to facilitate a stable and continuous recording of the ECG, even during the person's daily activities. As the ECG-electrodes lose contact with the skin surface because of movement, this can lead to increased noise in the signal. Therefore, a solution for reliable ECG-recording have to be developed. The second task is to perform a validation of the ECG-sensor. For this purpose, the own ECG-measurements must be compared with measurements taken by a medically certified ECG-device, in order to guarantee the correctness of the ECG-values.
+Before the ECG-sensor can be fully integrated into the prototype, some tasks had be solved.  The first task to solve isA continuous recording of the ECG is required, even during the person's daily activities. The first task will be to facilitate a stable and continuous recording of the ECG, even during the person's daily activities. As the ECG-electrodes lose contact with the skin surface because of movement, this can lead to increased noise in the signal. Therefore, a solution for reliable ECG-recording have to be developed. The second task is to perform a validation of the ECG-sensor. For this purpose, the own ECG-measurements must be compared with measurements taken by a medically certified ECG-device, in order to guarantee the correctness of the ECG-values. Based on Gjoreski et al. \cite{Gjoreski2014} the ECG-signal is relevant to detect fall-events as mentioned in section \ref{sec:relatedwork}. Based on this, another task will be the determination of ECG patterns that provide relevant information for fall events.
 
+The first test measurements with the ECG sensor confirmed the noisy and unstable ECG signal during movements. To ensure a stable and continuous signal during daily activities, an adjustable and flexible ECG-harness has been developed with prefabricated electrodes positioning and the ability to adapt to any body shape (see Fogure \ref{fig:ECGHarness}).
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.39]{images/ECG-Harness}
+	\caption[ECG - Harness]{ECG - Harness}
+	\label{fig:ECGHarness}
+\end{figure}
+After completing the development of the ECG-harness the measurements were repeated using the harness solution. A more stable signal resulted, especially during walking and the sitting procedure the stability of the ECG-signal was improved significantly. The artifacts in an ECG-signal which result during motion may be used as a recognition pattern for fall-events. After the positive results regarding the improved of the signal's stability validation test were conducted in a medical lab with the assistance of a physician. In the medical practice an ECG-device with 10 electrodes, but for wearable or emergency purposes (e.g. ambulance) a 3-Channel ECG-device is recommended because it provides less wiring and satisfy the aspect of patient compliance. Comparing the measurements taken in the medical lab with the ECG-measurements provided by our ECG-sensor the correct functionality of our sensor could be confirmed. The used sensor only differs in signal quality that includes noise and baseline shifting. The reasons for these distinctions in signal quality were explained by the supervising physician. Baseline wander (BW) disturbances are caused by variations in electrode-skin impedance, patient's movement and breathe during the ECG-measurements. Considering amyostasia disturbances the ECG-signal is affected by contraction of muscles near the heart which lead to noise in the signal. Muscle contraction is common for people which suffer from tremor or fearing the ECG-measurement and for disabled people. The certified medical devices have a integrated a filter which can be applied, to smooth the signal \cite{ECGNoise,DrNicoletteWagner}. 
 
 \subsection{Generation of test-events}
 Lorena's part  -->>> fall test events , highlight the test with synchronization problem

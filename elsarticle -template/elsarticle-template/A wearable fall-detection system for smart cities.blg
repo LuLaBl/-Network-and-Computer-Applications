@@ -5,45 +5,46 @@ The style file: elsarticle-num.bst
 Database file #1: mybibfile.bib
 Warning--empty journal in Luder2009
 Warning--empty year in Kozina
-You've used 14 entries,
+Warning--empty journal in DrNicoletteWagner
+You've used 16 entries,
             2937 wiz_defined-function locations,
-            777 strings with 8548 characters,
-and the built_in function-call counts, 4811 in all, are:
-= -- 449
-> -- 150
+            793 strings with 9143 characters,
+and the built_in function-call counts, 5260 in all, are:
+= -- 494
+> -- 164
 < -- 7
-+ -- 59
-- -- 45
-* -- 336
-:= -- 620
-add.period$ -- 22
-call.type$ -- 14
-change.case$ -- 12
++ -- 65
+- -- 49
+* -- 362
+:= -- 688
+add.period$ -- 24
+call.type$ -- 16
+change.case$ -- 15
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 167
-empty$ -- 548
-format.name$ -- 57
-if$ -- 1253
+cite$ -- 19
+duplicate$ -- 180
+empty$ -- 592
+format.name$ -- 62
+if$ -- 1371
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 13
-newline$ -- 58
-num.names$ -- 16
-pop$ -- 113
+int.to.str$ -- 16
+missing$ -- 16
+newline$ -- 64
+num.names$ -- 18
+pop$ -- 123
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 330
+skip$ -- 365
 stack$ -- 0
-substring$ -- 248
-swap$ -- 64
+substring$ -- 262
+swap$ -- 65
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 38
-width$ -- 16
-write$ -- 136
-(There were 2 warnings)
+warning$ -- 3
+while$ -- 41
+width$ -- 18
+write$ -- 153
+(There were 3 warnings)
