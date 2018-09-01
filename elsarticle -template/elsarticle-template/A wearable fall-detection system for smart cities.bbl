@@ -80,7 +80,7 @@ T.~J{\"a}ms{\"a}, M.~Kangas, I.~Vikman, L.~Nyberg, R.~Korpelainen, Fall
 
 \bibitem{LuigiMasterThesis}
 L.~{La Blunda}, {Die Sturzerkennung basierend auf Body Area Networks (Master
-  Thesis)}, Frankfurt Univeristy of Applied Sciences.
+  Thesis)}, Frankfurt Univeristy of Applied Sciences, Hessen - Germany.
 
 \bibitem{ECGNoise}
 U.~Banu, G.~{Patil Dr.}, F.~{Ruksar Dr.}, A survey on sources of noise and
@@ -90,6 +90,20 @@ U.~Banu, G.~{Patil Dr.}, F.~{Ruksar Dr.}, A survey on sources of noise and
 
 \bibitem{DrNicoletteWagner}
 N.~{Fritsch-Wagner Dr.}, {ECG-validation and consultation in medical lab}.
+
+\bibitem{international2005medical}
+{International Electrotechnical Commission et al.}, Medical electrical
+  equipment-part 1: General requirements for basic safety and essential
+  performance, IEC 60601-1: 2005.
+
+\bibitem{STAMPThesis}
+V.~{Balgos}, {A Systems Theoretic Application to Design for the Safety of
+  Medical Diagnostic Devices (Master Thesis)}, University of Missouri, Columbia
+  - USA.
+
+\bibitem{leveson2011engineering}
+N.~Leveson, Engineering a safer world: Systems thinking applied to safety, MIT
+  press, 2011.
 
 \bibitem{Feynman1963118}
 R.~Feynman, F.~{Vernon Jr.}, The theory of a general quantum system interacting

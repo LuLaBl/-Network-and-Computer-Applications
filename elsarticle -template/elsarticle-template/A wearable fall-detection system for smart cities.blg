@@ -6,36 +6,36 @@ Database file #1: mybibfile.bib
 Warning--empty journal in Luder2009
 Warning--empty year in Kozina
 Warning--empty journal in DrNicoletteWagner
-You've used 16 entries,
+You've used 19 entries,
             2937 wiz_defined-function locations,
-            793 strings with 9143 characters,
-and the built_in function-call counts, 5260 in all, are:
-= -- 494
-> -- 164
+            809 strings with 9647 characters,
+and the built_in function-call counts, 5769 in all, are:
+= -- 533
+> -- 176
 < -- 7
-+ -- 65
-- -- 49
-* -- 362
-:= -- 688
-add.period$ -- 24
-call.type$ -- 16
-change.case$ -- 15
++ -- 71
+- -- 52
+* -- 371
+:= -- 756
+add.period$ -- 27
+call.type$ -- 19
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 180
-empty$ -- 592
-format.name$ -- 62
-if$ -- 1371
+cite$ -- 22
+duplicate$ -- 197
+empty$ -- 666
+format.name$ -- 65
+if$ -- 1518
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 16
-newline$ -- 64
-num.names$ -- 18
-pop$ -- 123
+int.to.str$ -- 19
+missing$ -- 20
+newline$ -- 73
+num.names$ -- 21
+pop$ -- 146
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 365
+skip$ -- 416
 stack$ -- 0
 substring$ -- 262
 swap$ -- 65
@@ -44,7 +44,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 41
-width$ -- 18
-write$ -- 153
+while$ -- 44
+width$ -- 21
+write$ -- 174
 (There were 3 warnings)

@@ -238,9 +238,25 @@ Lorena's part  -->>> fall test events , highlight the test with synchronization 
 \label{sec:STAMP}
 
 \subsection{Introducing STAMP}
+A fall-detection system is a safety critical system requiring certification according to a safety standard (e.g. IEC 60601-1) \cite{international2005medical}. To satisfy functional safety requirements it is fundamental to apply hazard analysis methods during development to analyze the behavior of the system in case of malfunctioning. This technique should be applied already in the early design phases to counteract developmental errors \cite{STAMPThesis}. In the following the classical hazard analysis method FMECA and the advanced method STAMP will be applied in some architectural parts of the fall-detection system for functional safety validation.
+
+STAMP (System-Theoretic Accident Model and Processes) is a comprehensive hazard analysis method based on system theory. A major goal of this approach is to control or eliminate hazards. This approach proposed by Leveson \cite{leveson2011engineering} is used to identify probable accident causes that are categorized as follows:
+\begin{itemize}
+	\item Accidents based on hardware and software component failure
+	\item Unsafe interactions among components
+	\item Complex human machine interfaces and human error models
+	\item Erros in system design
+	\item Faulty requirements
+\end{itemize}  
+STAMP treats accidents as a control problem. To prevent accidents safety constraints derived from system safety requirements must be enforced inside the different system hierarchy levels. If the given safety constraints are violated accidents may occur. Checking the enforcement of safety constraints leads to an additional layer of system testing.
 
 \subsection{STAMP - Hazard analysis}
-
+STAMP begins on the system level and proceeds top down into the system hierarchy. To apply STAMP the following steps must be followed:
+\begin{itemize}
+	\item \textbf{Definition of accidents:} Person has fallen and the fall was not detected by the system.
+	\item \textbf{Definition of hazards:} Data from 1 to 4 sensors of the belt are not sufficiently correlated in time (synchronization error).
+	\item \textbf{Definition of safety requirements \& constraints:} The safety requirements and constraints are based on the hazard which causes the accident. A top level safety requirement is the real-time detection of fall-events. The timestamps of all four nodes must be synchronized. If constraints are violated system migrates to unsafe or hazardous state.
+\end{itemize}
 \section{Conclusion \& Future work}
 \label{sec:conclusion}
 
