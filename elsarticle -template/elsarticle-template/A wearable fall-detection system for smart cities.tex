@@ -254,9 +254,43 @@ STAMP treats accidents as a control problem. To prevent accidents safety constra
 STAMP begins on the system level and proceeds top down into the system hierarchy. To apply STAMP the following steps must be followed:
 \begin{itemize}
 	\item \textbf{Definition of accidents:} Person has fallen and the fall was not detected by the system.
-	\item \textbf{Definition of hazards:} Data from 1 to 4 sensors of the belt are not sufficiently correlated in time (synchronization error).
+	\item \textbf{Definition of hazards:} Data from 1 to 5 sensors of the belt are not sufficiently correlated in time (synchronization error).
 	\item \textbf{Definition of safety requirements \& constraints:} The safety requirements and constraints are based on the hazard which causes the accident. A top level safety requirement is the real-time detection of fall-events. The timestamps of all four nodes must be synchronized. If constraints are violated system migrates to unsafe or hazardous state.
+	\item \textbf{Definition of safety control structure:}
+	A high-level safety control structure should be defined which contains the system's components and the process which should be controlled.The control structure below (see Figure. \ref{fig:STAMPLevel1}) depicts the control loop of the controlled process, the movement of the person.
+	The sensors provide sensor data to the controller (smartphone). The smartphone contains a data acquisition algorithm to collect the incoming data and a fall-detection algorithm to analyze this data. If the event corresponds to a fall, the alert system on the mobile device will call the emergency services for intervention. The actuator part of the system contains the control of the data acquisition process, i.e. timers, sleep mode etc.
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[scale=0.35]{images/STAMP-SynchError}
+		\caption[Safety Control Structure - Hierarchy level 2 \& 3]{Safety Control Structure - Hierarchy level 2 \& 3}
+		\label{fig:STAMPLevel1}
+	\end{figure}
+
+	The lower level control loops (see Figure \ref{fig:STAMPLevel2+3}) illustrate a detailed internal control structure of the controlled processes. These processes are interacting as a controller in the lower level structure. Taking into consideration the second level safety control loop, the movement process control (controller) receives the sensor data. Based on the data a control command will be executed to control the BAN which sends a feedback to the movement process controller. The third level control loop zooms into the BAN control, which is the master (controller) that actuates the wake up procedure of the sensor nodes to control the nodes. These will deliver sensor data, including the time to the BAN control.
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[scale=0.39]{images/STAMP2+3level(2)}
+		\caption[Safety Control Structure - Hierarchy level 2 \& 3]{Safety Control Structure - Hierarchy level 2 \& 3}
+		\label{fig:STAMPLevel2+3}
+	\end{figure}
+	Here description level 4 and 5 	Here description level 4 and 5
+		Here description level 4 and 5
+		Here description level 4 and 5
+		Here description level 4 and 5
+		Here description level 4 and 5
+		Here description level 4 and 5
+	
+		\begin{figure}[!ht]
+		\centering
+		\includegraphics[scale=0.65]{images/STAMP4+5level(2)}
+		\caption[Safety Control Structure - Hierarchy level 4 \& 5]{Safety Control Structure - Hierarchy level 4 \& 5}
+		\label{fig:STAMPLevel4+5}
+	\end{figure}
+	
+
 \end{itemize}
+
+
 \section{Conclusion \& Future work}
 \label{sec:conclusion}
 
