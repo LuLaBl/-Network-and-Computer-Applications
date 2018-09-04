@@ -122,7 +122,7 @@ The techniques used for the fall-detection in wearable solutions are the followi
 Taking into consideration the fact that it is an essential advantage to focus on wearable solution because of the system's functional independence the scientific work of Li et al. \cite{Li2009} will be explained subsequently. The solution of Li et al. \cite{Li2009} includes two wearable sensor nodes which are based on a BAN. These sensor nodes consist of an accelerometer and gyroscope and they are placed on the chest (Node A) and on the thigh (Node B, see Figure \ref{fig:LietAl-Architecture}). 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.06]{Images/Stankovic_papa2}
+	\includegraphics[scale=0.38]{Images/Stankovic-papa2.pdf}
 	\caption[System architecture according to Li et al.]{System architecture according to Li et al. \cite{Li2009}}
 	\label{fig:LietAl-Architecture}
 \end{figure}
@@ -266,19 +266,15 @@ STAMP begins on the system level and proceeds top down into the system hierarchy
 		\label{fig:STAMPLevel1}
 	\end{figure}
 
-	The lower level control loops (see Figure \ref{fig:STAMPLevel2+3}) illustrate a detailed internal control structure of the controlled processes. These processes are interacting as a controller in the lower level structure. Taking into consideration the second level safety control loop, the movement process control (controller) receives the sensor data. Based on the data a control command will be executed to control the BAN which sends a feedback to the movement process controller. The third level control loop zooms into the BAN control, which is the master (controller) that actuates the wake up procedure of the sensor nodes to control the nodes. These will deliver sensor data, including the time to the BAN control.
+	The lower level control loops (see Figure \ref{fig:STAMPLevel2+3}, \ref{fig:STAMPLevel4+5}) illustrate a detailed internal control structure of the controlled processes. These processes are interacting as a controller in the lower level structures. Taking into consideration the second level safety control loop, the movement process control (controller) receives the sensor data. Based on the data a control command will be executed to control the BAN which sends a feedback to the movement process controller. The third level control loop zooms into the BAN control, which is the master (controller) that actuates the wake up procedure of the sensor nodes to control the nodes. These will deliver sensor data, including the time to the BAN control.
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[scale=0.39]{images/STAMP2+3level(2)}
+		\includegraphics[scale=0.41]{images/STAMP2+3level(2)}
 		\caption[Safety Control Structure - Hierarchy level 2 \& 3]{Safety Control Structure - Hierarchy level 2 \& 3}
 		\label{fig:STAMPLevel2+3}
 	\end{figure}
-	Here description level 4 and 5 	Here description level 4 and 5
-		Here description level 4 and 5
-		Here description level 4 and 5
-		Here description level 4 and 5
-		Here description level 4 and 5
-		Here description level 4 and 5
+
+ 	To provide a more detailed hazard analysis two more control loop layers were created which are illustrated in the successive illustration (see Figure  \ref{fig:STAMPLevel4+5}). The fourth level of the system's control structure zooms into Sensor node control (controlled process, see Figure \ref{fig:STAMPLevel2+3}) which is the control unit (controller). Considering this control layer the controller receives the sensor's services and characteristics which are provided via Bluetooth Low Energy (BLE) and contain the sensor values. The sensor node control initiates a scanning command (actuator) to detect the sensor properties which are provided by the BLE - interface (controlled process: Bluetooth sensor detection control).  
 	
 		\begin{figure}[!ht]
 		\centering
@@ -286,6 +282,10 @@ STAMP begins on the system level and proceeds top down into the system hierarchy
 		\caption[Safety Control Structure - Hierarchy level 4 \& 5]{Safety Control Structure - Hierarchy level 4 \& 5}
 		\label{fig:STAMPLevel4+5}
 	\end{figure}
+
+	Taking into consideration the fifth level of the control loop which is depicted in figure \ref{fig:STAMPLevel4+5} an accurate view of the controlled process Bluetooth sensor detection control in level 4 is provided. The master Bluetooth sensor detection control (controller) actuates a connection command via BLE (actuator) to establish a connection to the sensors (controlled process: Bluetooth connection controller) which sends a list of available sensor's services and characteristics to the controller. 
+	
+	All these hazards (see red labels in Figure \ref{fig:STAMPLevel1}, \ref{fig:STAMPLevel2+3}, \ref{fig:STAMPLevel4+5}) lead to safety constraints. The incomplete list of sensor's services and characteristics (control loop - lower level 5) and sensor node jam (control loop - lower level 4) can lead to clock drift (control loop - lower level 3) and unsynchronized data (control loop - lower level 2) in the upper levels. Merging all the hazards from the lower levels may cause the synchronization error in the top level control structure and lead to violation of the safety constraint $\Delta$t $<=$ 50ms between the timestamps of the sensor nodes. The combination of these possible hazards makes the system inoperable to detect falls in real-time.
 	
 
 \end{itemize}

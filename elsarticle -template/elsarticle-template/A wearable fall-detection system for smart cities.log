@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  4 SEP 2018 10:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  4 SEP 2018 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,68 +369,67 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
  [4]
-<Images/Stankovic_papa2.jpg, id=109, 2999.205pt x 5331.92pt>
-File: Images/Stankovic_papa2.jpg Graphic file (type jpg)
-<use Images/Stankovic_papa2.jpg>
-Package pdftex.def Info: Images/Stankovic_papa2.jpg  used on input line 125.
-(pdftex.def)             Requested size: 179.94453pt x 319.9014pt.
- [5 <./Images/Stankovic_papa2.jpg>] [6] [7]
-<images/KozinaImpact.png, id=146, 226.446pt x 181.27725pt>
+<Images/Stankovic-papa2.pdf, id=109, 597.23125pt x 845.1575pt>
+File: Images/Stankovic-papa2.pdf Graphic file (type pdf)
+<use Images/Stankovic-papa2.pdf>
+Package pdftex.def Info: Images/Stankovic-papa2.pdf  used on input line 125.
+(pdftex.def)             Requested size: 226.95023pt x 321.1632pt.
+ [5 <./Images/Stankovic-papa2.pdf>] [6] [7]
+<images/KozinaImpact.png, id=159, 226.446pt x 181.27725pt>
 File: images/KozinaImpact.png Graphic file (type png)
 <use images/KozinaImpact.png>
 Package pdftex.def Info: images/KozinaImpact.png  used on input line 166.
 (pdftex.def)             Requested size: 226.44543pt x 181.27681pt.
  [8 <./Images/KozinaImpact.PNG>]
-<images/belt.png, id=164, 823.57687pt x 249.93375pt>
+<images/belt.png, id=177, 823.57687pt x 249.93375pt>
 File: images/belt.png Graphic file (type png)
 <use images/belt.png>
 Package pdftex.def Info: images/belt.png  used on input line 182.
 (pdftex.def)             Requested size: 337.6687pt x 102.4735pt.
  [9] [10 <./Images/belt.png>]
-<images/axis.png, id=181, 1115.66812pt x 936.49875pt>
+<images/axis.png, id=194, 1115.66812pt x 936.49875pt>
 File: images/axis.png Graphic file (type png)
 <use images/axis.png>
 Package pdftex.def Info: images/axis.png  used on input line 202.
 (pdftex.def)             Requested size: 312.38495pt x 262.21786pt.
-<images/ECG-BAN.png, id=187, 802.197pt x 373.99725pt>
+<images/ECG-BAN.png, id=200, 802.197pt x 373.99725pt>
 File: images/ECG-BAN.png Graphic file (type png)
 <use images/ECG-BAN.png>
 Package pdftex.def Info: images/ECG-BAN.png  used on input line 215.
 (pdftex.def)             Requested size: 344.93799pt x 160.81567pt.
  [11 <./Images/axis.png>] [12 <./Images/ECG-BAN.png>]
-<images/ECG-Harness.png, id=204, 691.08188pt x 487.06969pt>
+<images/ECG-Harness.png, id=217, 691.08188pt x 487.06969pt>
 File: images/ECG-Harness.png Graphic file (type png)
 <use images/ECG-Harness.png>
 Package pdftex.def Info: images/ECG-Harness.png  used on input line 226.
 (pdftex.def)             Requested size: 269.52084pt x 189.9564pt.
  [13 <./Images/ECG-Harness.png>] [14] [15]
-<images/STAMP-SynchError.png, id=230, 899.61093pt x 631.60968pt>
+<images/STAMP-SynchError.png, id=243, 899.61093pt x 631.60968pt>
 File: images/STAMP-SynchError.png Graphic file (type png)
 <use images/STAMP-SynchError.png>
 Package pdftex.def Info: images/STAMP-SynchError.png  used on input line 264.
 (pdftex.def)             Requested size: 314.86855pt x 221.0667pt.
-<images/STAMP2+3level(2).png, id=232, 724.20563pt x 704.6325pt>
+<images/STAMP2+3level(2).png, id=246, 724.20563pt x 704.6325pt>
 File: images/STAMP2+3level(2).png Graphic file (type png)
 <use images/STAMP2+3level(2).png>
 Package pdftex.def Info: images/STAMP2+3level(2).png  used on input line 272.
-(pdftex.def)             Requested size: 282.43906pt x 274.80557pt.
- [16 <./Images/STAMP-SynchError.PNG>]
-<images/STAMP4+5level(2).png, id=239, 448.074pt x 566.115pt>
+(pdftex.def)             Requested size: 296.92622pt x 288.9012pt.
+ [16 <./Images/STAMP-SynchError.PNG>] [17 <./Images/STAMP2+3level(2).png>]
+<images/STAMP4+5level(2).png, id=261, 448.074pt x 566.115pt>
 File: images/STAMP4+5level(2).png Graphic file (type png)
 <use images/STAMP4+5level(2).png>
-Package pdftex.def Info: images/STAMP4+5level(2).png  used on input line 285.
+Package pdftex.def Info: images/STAMP4+5level(2).png  used on input line 281.
 (pdftex.def)             Requested size: 291.24464pt x 367.97038pt.
- [17 <./Images/STAMP2+3level(2).png>] (./A wearable fall-detection system for s
-mart cities.bbl
-[18 <./Images/STAMP4+5level(2).PNG>] [19]
+ [18 <./Images/STAMP4+5level(2).PNG>]
+(./A wearable fall-detection system for smart cities.bbl [19] [20]
 Underfull \hbox (badness 2435) in paragraph at lines 95--98
 []\OT1/cmr/m/n/10 International Elec-trotech-ni-cal Com-mis-sion et al., Med-i-
 cal elec-tri-cal
  []
 
-[20])
+[21])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
- [21]
+ [22]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
  (./A wearable fall-detection system for smart cities.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 307.
@@ -442,12 +441,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
  6574 strings out of 492649
- 94532 string characters out of 6133385
+ 94559 string characters out of 6133385
  193503 words of memory out of 5000000
  10314 multiletter control sequences out of 15000+600000
  9046 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,7n,30p,2379b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,7n,30p,2379b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-di
@@ -461,11 +460,11 @@ live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2018
 t/fonts/type1/public/amsfonts/cm/cmti8.pfb><c:/texlive/2018/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmtt8.pfb>
-Output written on "A wearable fall-detection system for smart cities.pdf" (21 p
-ages, 3828617 bytes).
+Output written on "A wearable fall-detection system for smart cities.pdf" (22 p
+ages, 2058369 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 371 PDF objects out of 1000 (max. 8388607)
+ 302 compressed objects within 4 object streams
+ 69 named destinations out of 1000 (max. 500000)
  155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
