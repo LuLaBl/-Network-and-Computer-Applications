@@ -89,7 +89,8 @@ U.~Banu, G.~{Patil Dr.}, F.~{Ruksar Dr.}, A survey on sources of noise and
   8--13.
 
 \bibitem{DrNicoletteWagner}
-N.~{Fritsch-Wagner Dr.}, {ECG-validation and consultation in medical lab}.
+N.~{Fritsch-Wagner Dr.}, {Private communication - ECG-validation and
+  consultation in medical lab}, \url{https://www.hp-weglache.de/}, 2017.
 
 \bibitem{international2005medical}
 {International Electrotechnical Commission et al.}, Medical electrical
@@ -104,17 +105,5 @@ V.~{Balgos}, {A Systems Theoretic Application to Design for the Safety of
 \bibitem{leveson2011engineering}
 N.~Leveson, Engineering a safer world: Systems thinking applied to safety, MIT
   press, 2011.
-
-\bibitem{Feynman1963118}
-R.~Feynman, F.~{Vernon Jr.}, The theory of a general quantum system interacting
-  with a linear dissipative system, Annals of Physics 24 (1963) 118--173.
-\newblock \href {http://dx.doi.org/10.1016/0003-4916(63)90068-X}
-  {\path{doi:10.1016/0003-4916(63)90068-X}}.
-
-\bibitem{Dirac1953888}
-P.~Dirac, The lorentz transformation and absolute time, Physica 19~(1-–12)
-  (1953) 888--896.
-\newblock \href {http://dx.doi.org/10.1016/S0031-8914(53)80099-6}
-  {\path{doi:10.1016/S0031-8914(53)80099-6}}.
 
 \end{thebibliography}

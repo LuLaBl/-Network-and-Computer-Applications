@@ -293,12 +293,19 @@ STAMP begins on the system level and proceeds top down into the system hierarchy
 
 \section{Conclusion}
 \label{sec:conclusion}
+This work presents a wearable solution for fall detection that enhances the benefits of smart cities in terms of e-health. The tests performed with the test persons provided positive feedback regarding the use of this solution and a high acceptance of the system in application with smart cities was achieved. These results also show that falls are still a general problem in our daily life, which are underestimated and can lead to serious injuries or even fatal consequences. 
 
-\section{Bibliography styles}
+The test measurements carried out with the additional ECG sensor were positive and confirmed the approach of Gjoresk et al. \cite{Gjoreski2014} which allows a more accurate fall detection and, if necessary, a fall prediction. In the further development process it is planned to use machine learning or Complex Event Processing (CEP) in order to use certain ECG patterns in combination with the acceleration data. These should enable a reliable detection of falls.
 
-There are various bibliography styles available. You can select the style of your choice in the preamble of this document. These styles are Elsevier styles based on standard styles like Harvard and Vancouver. Please use Bib\TeX\ to generate your bibliography and include DOIs whenever available.
+However, first the synchronization problem of the BAN must be solved, which can compromise the system's functionality. In order to solve this problem, a new hardware platform should be used, which contains a real time operating system, which facilitates the synchronization of different tasks in a wireless sensor network. In addition, the new microcontroller should also meet the requirements of patient compliance (see subsection \ref{subsec:Architecture}).
 
-Here are two sample references: \cite{Feynman1963118,Dirac1953888}.
+
+
+\section*{Acknowledgment}
+We would like to thank the test subjects for the time they spent testing the fall detection prototype. The feedback and test results are very valuable for the further development of the detection system. We would particularly like to thank Dr. Nicolette Fritsch-Wagner for her assistance during the validation of our ECG sensor and for explaining how important the use of medical sensors (ECG sensors) can be for the detection of falls. The information obtained is of great importance and is necessary for the efficient development of reliable fall detection solution. 
+
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+
 
 \section*{References}
 
