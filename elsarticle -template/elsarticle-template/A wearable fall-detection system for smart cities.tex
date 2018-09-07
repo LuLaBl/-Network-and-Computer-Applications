@@ -212,18 +212,18 @@ The positioning of the nodes around the hip allows a more precise fall-character
 Analyzing the literature regarding fall detection, it was pointed out that the existing solutions show certain weaknesses in the reliable detection of falls. Considering Gjoreski et al. approach, his results with the fusion of physical sensors and the ECG sensor show a reliable fall detection. Especially the evaluation of the ECG signal leads to an essential improvement of the system's accuracy.  In \cite{Gjoreski2014} the ECG signal could be used to distinguish between different postures. The inclusion of medical parameters could even provide a fall prediction that would represent a significant progress in health care and prevent fatal injuries. Based on these results the proposed fall-detection belt  has been upgraded with a portable 3-channel ECG-sensor which provides an analog signal to the microcontroller. The successive illustration depicts the BAN structure of the update prototype architecture.
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.34]{images/ECG-BAN}
+	\includegraphics[scale=0.27]{images/ECG-BAN.png}
 	\caption[ECG - BAN]{ECG - BAN}
 	\label{fig:ECGBAN}
 \end{figure}
-The updated BAN includes four sensor nodes placed on the belt (S1 -S4) and an additional node on the chest (S5). These five nodes are acting as peripherals and they are continuously providing sensor data to the smart phone (central) via Bluetooth Low Energy. The sensor nodes S1 to S4 send the acceleration data and the ECG-sensor sends analog values (representation of ECG-signal) to the central device. Fusing these information the central device analyzes the events for possible fall-events.
+The updated BAN includes four sensor nodes placed on the belt (S1 - S4) and an additional node on the chest (S5). These five nodes are acting as peripherals and they are continuously providing sensor data to the smart phone (central) via Bluetooth Low Energy. The sensor nodes S1 to S4 send the acceleration data and the ECG-sensor sends analog values (representation of ECG-signal) to the central device. Fusing these information the central device analyzes the events for possible fall-events.
 
 Before the ECG-sensor can be fully integrated into the prototype, some tasks had be solved.  The first task to solve isA continuous recording of the ECG is required, even during the person's daily activities. The first task will be to facilitate a stable and continuous recording of the ECG, even during the person's daily activities. As the ECG-electrodes lose contact with the skin surface because of movement, this can lead to increased noise in the signal. Therefore, a solution for reliable ECG-recording have to be developed. The second task is to perform a validation of the ECG-sensor. For this purpose, the own ECG-measurements must be compared with measurements taken by a medically certified ECG-device, in order to guarantee the correctness of the ECG-values. Based on Gjoreski et al. \cite{Gjoreski2014} the ECG-signal is relevant to detect fall-events as mentioned in section \ref{sec:relatedwork}. Based on this, another task will be the determination of ECG patterns that provide relevant information for fall events.
 
 The first test measurements with the ECG sensor confirmed the noisy and unstable ECG signal during movements. To ensure a stable and continuous signal during daily activities, an adjustable and flexible ECG-harness has been developed with prefabricated electrodes positioning and the ability to adapt to any body shape (see Fogure \ref{fig:ECGHarness}).
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.39]{images/ECG-Harness}
+	\includegraphics[scale=0.31]{images/ECG-Harness.png}
 	\caption[ECG - Harness]{ECG - Harness}
 	\label{fig:ECGHarness}
 \end{figure}
