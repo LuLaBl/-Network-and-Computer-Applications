@@ -506,16 +506,16 @@ After testing the used fall detection prototype, some problems were
 found. Moreover, some considerations will be applied in future tests.
 
 First of all, we are going to explain the problems related to the prototype; problems related to its hardware and
-software. Talking about the software, the synchronisation in the prototype is an issue; we have founded the following problems:
+software. Talking about the software, the synchronization in the prototype is an issue; we have founded the following problems:
 
 \begin{itemize}
  \item In one hand, the falls from the beginning always should be discarded because the sensors are 
  sending a lot of data. The Table~\ref{tabla:Synchro} will be used to explain the problem. Let us say 
  that in ``fall 1'', there are more than 30 values that define the fall, and later in ``fall 3'', there are 
- 12 values that define the fall. So, in order to analyse the falls and compare the acceleration behaviour, it is 
- difficult to work with that information. A comparison of two FAW falls with the synchronisation problem is shown
- in Figure~\ref{fig:synchronisation1}; the sensor 1 acceleration values for the first FAW fall are coloured in blue and the
- sensor 1 acceleration values for the second FAW fall are coloured in red. The first fall is one fall from the beginning
+ 12 values that define the fall. So, in order to analyze the falls and compare the acceleration behavior, it is 
+ difficult to work with that information. A comparison of two FAW falls with the synchronization problem is shown
+ in Figure~\ref{fig:synchronisation1}; the sensor 1 acceleration values for the first FAW fall are colored in blue and the
+ sensor 1 acceleration values for the second FAW fall are colored in red. The first fall is one fall from the beginning
  of the simulation, and the second one is from the middle of the simulation.
  
  \begin{table}[!ht]
@@ -568,7 +568,24 @@ STAMP (System-Theoretic Accident Model and Processes) is a comprehensive hazard 
 STAMP treats accidents as a control problem. To prevent accidents safety constraints derived from system safety requirements must be enforced inside the different system hierarchy levels. If the given safety constraints are violated accidents may occur. Checking the enforcement of safety constraints leads to an additional layer of system testing. 
 
 \subsection{STAMP - Hazard analysis}
-STAMP begins on the system level and proceeds top down into the system hierarchy. To apply STAMP the following steps must be followed:
+STAMP begins on the system level and proceeds top down into the system hierarchy. The hierarchical-based analysis in STAMP is based on control loop structures which are iterated from the high abstract level (overall system view) to the lower system levels to build up hierarchical system models. The basic principle of the control structure is depicted in the successive illustration (see Figure \ref{fig:STAMPOverview}). 
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.38]{images/STAMP_OVERVIEW}
+	\caption[STAMP - Basic control loop structure]{STAMP - Basic control loop structure according to Leveson \cite{leveson2011engineering})}
+	\label{fig:STAMPOverview}
+\end{figure} \\
+The graphic shows that the control structure consists of the following components:
+\begin{itemize}
+	\item Controller
+	\item Actuators
+	\item Controlled Process
+	\item Sensors
+\end{itemize}
+The controller unit of the control structure is acting as a master and includes a process model to determine control actions that are executed by the actuators to control the defined process (Controlled Process). A feedback loop (measured variables) is provided by the sensor unit which informs the controller about the process state. This information is used by the master to initiate a control action (controlled variables) to run the system within predefined limits.
+
+To apply STAMP the following steps must be followed:
+
 \begin{itemize}
 	\item \textbf{Definition of accidents:} Person has fallen and the fall was not detected by the system.
 	\item \textbf{Definition of hazards:} Data from 1 to 5 sensors of the belt are not sufficiently correlated in time (synchronization error).
