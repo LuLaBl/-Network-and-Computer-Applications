@@ -2,7 +2,7 @@
 \BOOKMARK [1][-]{section.2}{Related Work}{}% 2
 \BOOKMARK [1][-]{section.3}{Background}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Fall-event analysis}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Fall-patterns based on EPL}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Fall-patterns based on CEP}{section.3}% 5
 \BOOKMARK [2][-]{subsection.3.3}{IoT test event generator}{section.3}% 6
 \BOOKMARK [1][-]{section.4}{Fall-detection system prototype}{}% 7
 \BOOKMARK [2][-]{subsection.4.1}{Architecture}{section.4}% 8

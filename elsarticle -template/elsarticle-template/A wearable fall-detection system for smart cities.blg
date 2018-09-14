@@ -6,45 +6,45 @@ Database file #1: mybibfile.bib
 Warning--empty journal in Luder2009
 Warning--empty year in Kozina
 Warning--empty booktitle in ECGNoise
-You've used 23 entries,
+You've used 24 entries,
             2937 wiz_defined-function locations,
-            830 strings with 10752 characters,
-and the built_in function-call counts, 6874 in all, are:
-= -- 636
-> -- 219
+            836 strings with 10869 characters,
+and the built_in function-call counts, 7082 in all, are:
+= -- 658
+> -- 223
 < -- 9
-+ -- 88
-- -- 65
-* -- 435
-:= -- 903
-add.period$ -- 31
-call.type$ -- 23
-change.case$ -- 23
++ -- 90
+- -- 66
+* -- 441
+:= -- 929
+add.period$ -- 32
+call.type$ -- 24
+change.case$ -- 24
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 236
-empty$ -- 798
-format.name$ -- 81
-if$ -- 1824
+cite$ -- 27
+duplicate$ -- 243
+empty$ -- 826
+format.name$ -- 82
+if$ -- 1884
 int.to.chr$ -- 0
-int.to.str$ -- 23
+int.to.str$ -- 24
 missing$ -- 21
-newline$ -- 86
-num.names$ -- 25
-pop$ -- 180
+newline$ -- 89
+num.names$ -- 26
+pop$ -- 188
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 504
+skip$ -- 524
 stack$ -- 0
-substring$ -- 263
-swap$ -- 77
+substring$ -- 265
+swap$ -- 78
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 48
-width$ -- 25
-write$ -- 212
+while$ -- 49
+width$ -- 26
+write$ -- 221
 (There were 3 warnings)
