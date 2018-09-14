@@ -1,14 +1,15 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Related Work}{}% 2
 \BOOKMARK [1][-]{section.3}{Background}{}% 3
-\BOOKMARK [1][-]{section.4}{Fall-detection system prototype}{}% 4
-\BOOKMARK [2][-]{subsection.4.1}{Architecture}{section.4}% 5
-\BOOKMARK [2][-]{subsection.4.2}{Sensor fusion}{section.4}% 6
-\BOOKMARK [2][-]{subsection.4.3}{Generation of test-events}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.4}{IoT test event generator}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.5}{Fall simulation test events}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.6}{Detected problems}{section.4}% 10
-\BOOKMARK [1][-]{section.5}{Example application of STAMP as hazard analysis method}{}% 11
-\BOOKMARK [2][-]{subsection.5.1}{Introducing STAMP}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.2}{STAMP - Hazard analysis}{section.5}% 13
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 14
+\BOOKMARK [2][-]{subsection.3.1}{Fall-event analysis}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Fall-patterns based on EPL}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{IoT test event generator}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Fall-detection system prototype}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Architecture}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Fall simulation test events}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{Sensor fusion}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.4}{Detected problems}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Example application of STAMP as hazard analysis method}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Introducing STAMP}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{STAMP - Hazard analysis}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 15
