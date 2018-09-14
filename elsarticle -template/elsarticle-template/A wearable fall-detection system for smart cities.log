@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  14 SEP 2018 12:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  14 SEP 2018 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -831,28 +831,28 @@ Package pdftex.def Info: Images/STAMP4+5level(2).png  used on input line 615.
 
 [30 <./Images/STAMP2+3level(2).png>] [31 <./Images/STAMP4+5level(2).PNG>]
 [32] [33] (./A wearable fall-detection system for smart cities.bbl [34]
-[35]
+[35] [36]
 Underfull \hbox (badness 2435) in paragraph at lines 138--141
 []\OT1/cmr/m/n/10 International Elec-trotech-ni-cal Com-mis-sion et al., Med-i-
 cal elec-tri-cal
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 659.
- [36]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 659.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 661.
+ [37]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 661.
  (./A wearable fall-detection system for smart cities.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 659.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 659.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 661.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 661.
 Package rerunfilecheck Info: File `"A wearable fall-detection system for smart 
 cities".out' has not changed.
 (rerunfilecheck)             Checksum: 03083E4AAEDE2DDC32EE4ADAA76EB3F9;894.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 659.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 661.
  ) 
 Here is how much of TeX's memory you used:
- 10841 strings out of 492649
- 148709 string characters out of 6133385
- 273282 words of memory out of 5000000
+ 10842 strings out of 492649
+ 148716 string characters out of 6133385
+ 273338 words of memory out of 5000000
  14378 multiletter control sequences out of 15000+600000
  12077 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -872,11 +872,11 @@ type1/public/amsfonts/cm/cmti7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 8.pfb>
-Output written on "A wearable fall-detection system for smart cities.pdf" (36 p
-ages, 2189848 bytes).
+Output written on "A wearable fall-detection system for smart cities.pdf" (37 p
+ages, 2191475 bytes).
 PDF statistics:
- 601 PDF objects out of 1000 (max. 8388607)
- 501 compressed objects within 6 object streams
- 155 named destinations out of 1000 (max. 500000)
+ 608 PDF objects out of 1000 (max. 8388607)
+ 507 compressed objects within 6 object streams
+ 156 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
