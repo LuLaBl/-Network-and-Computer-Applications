@@ -207,7 +207,7 @@ defined, that means you need to specify incoming data for CEP-engine.
 After the event creation, rules should be defined to categorize	the incoming input in fall-events or daily activity.
 
  \renewcommand{\lstlistingname}{Example}
-\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,language=SQL,caption=Fall pattern based on Kozina et al. \cite{Kozina},label=FallPattern]
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,language=SQL,caption=Fall pattern based on Kozina et al. \cite{Kozina},label=CEPPattern]
 //1. Definition of the event - defines incoming data for CEP
 *----------------------------------------------------------*
 create schema BodyEvent(PersonID integer,accelS1 double,
@@ -328,7 +328,7 @@ The belt solution reflects the above criteria of a safety-critical systems. The 
 	\caption[Three axis reference scheme]{Three axis reference scheme \cite{LaBlunda.2016,LuigiMasterThesis}}
 	\label{fig:ReferenceScheme}
 \end{figure}
-As an example, a person is taken who has suffered a frontal fall because of a fainting. Analyzing the fall-event, it can be determined that the fall caused by a fainting leads firstly to a left rotation of the person's body (pre-fall phase). This event triggers the fall of the person (impact to the ground). Projecting this fall event on the reference scheme (see Figure \ref{fig:ReferenceScheme}), the body's orientation (e.g. left rotation) can be determined on the basis of the individual acceleration values ($\alpha_x$,  $\alpha_y$,  $\alpha_z$). Additionally, the acceleration magnitude (see Equation \ref{eq:acel}) can be used for the detection of the impact which is categorized by a temporary increase in the acceleration, as described in the previous section \ref{sec:background}.
+As an example, a person is taken who has suffered a frontal fall because of a fainting. Analyzing the fall-event, it can be determined that the fall caused by a fainting leads firstly to a left rotation of the person's body (pre-fall phase). This event triggers the fall of the person (impact to the ground). Projecting this fall event on the reference scheme (see Figure \ref{fig:ReferenceScheme}), the body's orientation (e.g. left rotation) can be determined on the basis of the individual acceleration values ($\alpha_x$,  $\alpha_y$,  $\alpha_z$). Additionally, the acceleration magnitude (see Equation \ref{eq:acel}) can be used for the detection of the impact which is categorized by a temporary increase in the acceleration, as described in the previous section \ref{sec:background}. Using the EPL query (Example \ref{CEPPattern}) stated in the subsection \ref{subsec:CEP} the system is capable to detect a general fall-event based on the physical principle proposed by \cite{Kozina}.
 Taking into consideration the test protocol stated in section \ref{sec:background} typical fall-events (e.g. rolling out of the bed) in nursing homes and hospitals can be detected by this solution.
 
 \subsection{Fall simulation test events}
