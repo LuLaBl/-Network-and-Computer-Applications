@@ -168,6 +168,7 @@ A different approach to detect fall-events is presented by Lüder et al. \cite{L
 \label{sec:background}
 
 \subsection{Fall-event analysis}
+\label{subsec:fall-analysis}
 The fall-detection prototype is based on the approach proposed in \cite{Gjoreski2014, Kozina}. To detect a fall-event a typical physical behavior is used which comprises the following the phases (see Figure \ref{fig:fallKozina}):
 \begin{itemize}
 	\item Pre-fall-phase 
@@ -187,35 +188,33 @@ The pre-fall phase illustrates a stationary position of the person where the mea
 	\caption[Acceleration during impact]{Acceleration during impact according to Kozina et al. ~\cite{Kozina}}
 	\label{fig:fallKozina}
 \end{figure}
-Taking into consideration the body orientation the single acceleration axis ($\alpha_x$, $\alpha_y$, $\alpha_z$) are essential to determine the person's body orientation. Assuming that the person is in a standing position (static posture), the x-acceleration ($\alpha_x$) corresponds to 1g (9.81$m/s^{2}$) and the other two axis ($\alpha_y$, $\alpha_z$) would be close to 0g (0$m/s^{2}$). As soon as the person changes his posture, the gravitational force will act on one of the other two axis ($\alpha_y$, $\alpha_z$) and the x-acceleration will be 0g (0$m/s^{2}$). Combining this information with the acceleration magnitude (see Equation \ref{eq:acel}) the system is able to detect the fall and additionally determine the type of fall. For applying this knowledge the Event Processing Language (EPL) CEP of Espertech \cite{Esper:2016} was used which will be explained in the subsequent subsection.
+Taking into consideration the body orientation the single acceleration axis ($\alpha_x$, $\alpha_y$, $\alpha_z$) are essential to determine the person's body orientation. Assuming that the person is in a standing position (static posture), the x-acceleration ($\alpha_x$) corresponds to 1g (9.81$m/s^{2}$) and the other two axis ($\alpha_y$, $\alpha_z$) would be close to 0g (0$m/s^{2}$). As soon as the person changes his posture, the gravitational force will act on one of the other two axis ($\alpha_y$, $\alpha_z$) and the x-acceleration will be 0g (0$m/s^{2}$). Combining this information with the acceleration magnitude (see Equation \ref{eq:acel}) the system is able to detect the fall and additionally determine the type of fall. For applying this knowledge the Event Processing Language (EPL) CEP of Espertech \cite{Esper:2016} was used which will be explained in the subsequent subsection \ref{subsec:CEP}.
 
 To ensure reliable fall detection, the system must be able to detect various types of falls. For this reason, the development of the fall detection prototype is also based on the creation of a test protocol covering different types of falls. The scientific papers by Li et al. \cite{Li2009} and Pannurat et al. \cite{Pannurat2014} were chosen as a reference, as they not only represent possible solutions for fall detection, but also offer a versatile overview of possible fall scenarios.
 
 
 \subsection{Fall-patterns based on CEP}
-Erklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige Abbildung
-Erklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige AbbildungErklären was CEP bzw EPL ist und dann regel basierend auf 
-Kozina et al. vorherige Abbildung
+\label{subsec:CEP}
+The EPL used in this ongoing research is CEP which is a stream-oriented language and  executed by Espertech \cite{Esper:2016}. The main reasons for using CEP are the following:
+\begin{itemize}
+	\item The syntax is based on SQL $\rightarrow$ complex events can be easily formulated.
+	\item It can be embedded in Java applications.
+	\item It is open-source.
+	\item CEP engine of Espertech processes around 500.000 events per second on a worlstation and between 70.000 and 200.000 events per second on a notebook (according to Espertech) $\rightarrow$ This is an essential feature to simulate time-critical applications. 
+\end{itemize}
+To define rules in CEP the incoming event should be
+defined, that means you need to specify incoming data for CEP-engine.
+After the event creation, rules should be defined to categorize	the incoming input in fall-events or daily activity.
 
  \renewcommand{\lstlistingname}{Example}
-\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,language=SQL,caption=Fall pattern,label=FallPattern]
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize,language=SQL,caption=Fall pattern based on Kozina et al. \cite{Kozina},label=FallPattern]
+//1. Definition of the event - defines incoming data for CEP
+*----------------------------------------------------------*
+create schema BodyEvent(PersonID integer,accelS1 double,
+ accelS2 double,timestamp string)
+
+//2. Definition of Event-pattern
+*----------------------------------------------------------*
 select a1.accelS1, a2.accelS1, a1.accelS2, a2.accelS2 from 
 pattern [every(a1=BodyEvent(a1.accelS1 <= 9.81) -> 
 a2=BodyEvent(a2.accelS1 -a1.accelS1 >= 9.81 and 
@@ -226,7 +225,14 @@ where timer:within(1sec)) or every
 and a1.PersonID = a2.PersonID) where timer:within(1sec))];
 \end{lstlisting}
 
-
+The illustrated EPL query is based on the physical principle shown in Figure \ref{fig:fallKozina} (see subsection \ref{subsec:fall-analysis}). It should be highlighted, that two nodes were used for this EPL query (one frontal node \& one lateral node) to apply the fall-detection, but in future this query will be extended for all the sensor nodes of the BAN. The four node BAN architecture is currently only used for redundancy purposes. In the example above the following event properties are used for the definition of the event-pattern:
+\begin{itemize}
+	\item a1.accelS1 $\rightarrow$ initial acceleration value of sensor node 1.
+	\item a2.accelS1 $\rightarrow$ successive acceleration value of sensor node 1.
+	\item a1.accelS2 $\rightarrow$ initial acceleration value of sensor node 2.
+	\item a2.accelS2 $\rightarrow$ successive acceleration value of sensor node 2.
+\end{itemize}
+Referring to the selected properties this example checks, if the initial acceleration of node 1 (a1.accelS1) is $<= 9.81$ m/$s^2$ which indicate that the person is in a stationary position in which the earth's gravity of 1g (9.81 m/$s^2$) acts on the body. Subsequently, it will be checked if the subtraction of the successive acceleration (a2.accelS1) and the first acceleration (a1.accelS1)  within a time of 1 second is $>=$ $<= 9.81$ m/$s^2$. If this condition is fulfilled, it is an indication that the person has suffered an impact to the ground. Adding the OR disjunction the second sensor node can be integrated and the statement is able to detect a fall in case one of the nodes matches the EPL query and the values of the acceleration correspond to the same person.
 \subsection{IoT test event generator}
 \label{iotteg}
 
@@ -299,7 +305,7 @@ generates events depending on the logical and relational operations.
 The hardware architecture plays an important role in the development process to ensure the reliable functioning of the system. A first prototype was developed in this ongoing research which is introduced in \cite{LaBlunda.2016, LaBlunda.2016b}. This paper presents an improved version of the prototype in \cite{LaBlunda.2016, LaBlunda.2016b}, which includes essential developments that contribute to reliable operation of the system. Additionally, the improved hardware design meets the requirement for patient compliance. This aspect should be taken into consideration to provide a user friendly design which facilitates the freedom of movement for the user. As a safety critical system for medical purposes, a redundant hardware design should be provided to protect the system against a total system failure which would have severe consequences for the user in case of fall-events. Referring to J{\"a}ms{\"a} et al. \cite{jamsa2014fall} the best approach is to position the accelerometer near to the waist. Taking into consideration these aspects a wearable belt solution was developed which is based on a four sensor nodes BAN (see Figure \ref{fig:BanBelt}).
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.41]{Images/belt}
+	\includegraphics[scale=0.39]{Images/belt}
 	\caption[Four sensor nodes BAN - Belt]{Four sensor nodes BAN - Belt \cite{LaBlunda.2016, LaBlunda.2016b}}
 	\label{fig:BanBelt}
 \end{figure}
@@ -517,7 +523,7 @@ IoT-TEG and the new functionality.
 Analyzing the literature regarding fall detection, it was pointed out that the existing solutions show certain weaknesses in the reliable detection of falls \cite{Igual2013, Li2009, Luder2009, Pannurat2014, jamsa2014fall}. Considering the approach of Gjoreski et al. \cite{Gjoreski2014}, the results with the fusion of physical sensors and the ECG-sensor show a reliable fall detection. Especially the evaluation of the ECG-signal leads to an essential improvement of the system's accuracy.  According to \cite{Gjoreski2014} the ECG-signal could be used to distinguish between different postures. The inclusion of medical parameters could even provide a fall prediction that would represent a significant progress in health care and prevent fatal injuries. Based on these results the proposed fall-detection belt  has been upgraded with a portable 3-channel ECG-sensor which provides an analog signal to the microcontroller. The successive illustration depicts the BAN structure of the update prototype architecture.
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.27]{Images/ECG-BAN.png}
+	\includegraphics[scale=0.26]{Images/ECG-BAN.png}
 	\caption[ECG - BAN]{ECG - BAN}
 	\label{fig:ECGBAN}
 \end{figure}
@@ -529,12 +535,23 @@ Before the ECG-sensor can be fully integrated into the prototype, some tasks had
 The first test measurements with the ECG-sensor confirmed the noisy and unstable ECG signal during movements. To ensure a stable and continuous signal during daily activities, an adjustable and flexible ECG-harness has been developed with prefabricated electrodes positioning and the ability to adapt to any body shape (see Figure \ref{fig:ECGHarness}).
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.34]{Images/ECG-Harness.png}
+	\includegraphics[scale=0.31]{Images/ECG-Harness.png}
 	\caption[ECG - Harness]{ECG - Harness}
 	\label{fig:ECGHarness}
 \end{figure}
-After completing the development of the ECG-harness the measurements were repeated using the harness solution. A more stable signal resulted, especially during walking and the sitting procedure the stability of the ECG-signal was improved significantly. The artifacts in an ECG-signal which result during motion may be used as a recognition pattern for fall-events. After the positive results regarding the improvements of the signal's stability, validation tests were conducted in a medical lab with the assistance of a physician. In clinical settings ECG-devices with 10 electrodes are being used but for wearable or emergency purposes (e.g. ambulance) a 3-Channel ECG-device is recommended because it provides less wiring and satisfies the aspect of patient compliance \cite{DrNicoletteWagner}. According to a study by Antonicelli et al. \cite{Antonicelli-ECG}, the use of a 3-lead ECG may be essential to avoid delayed treatment of specific heart diseases, such as elderly people who suffer from chronic heart disease and need continuous ECG monitoring. In addition, the analysis in \cite{Antonicelli-ECG} led to the result that a 3-lead ECG provides qualitatively similar evaluation as a 12-lead ECG. Comparing the measurements taken in the medical lab with the ECG-measurements provided by our ECG-sensor the correct functionality of our sensor could be confirmed. %The used sensor architecture only differs in signal quality that includes noise and baseline shifting. The reasons for these distinctions in signal quality were explained by the supervising physician. Baseline wander (BW) disturbances are caused by variations in electrode-skin impedance, patient's movement and breathing during the ECG-measurements. Considering amyostasia disturbances the ECG-signal is affected by contraction of muscles near the heart which lead to additional noise in the signal. Muscle contraction is common for people which suffer from tremor or fearing the ECG-measurement and for disabled people. The certified medical devices have an integrated filter which can be applied to smooth the signal \cite{ECGNoise,DrNicoletteWagner}. 
-Part of Fatima master thesis machine 
+After completing the development of the ECG-harness the measurements were repeated using the harness solution. A more stable signal resulted, especially during walking and the sitting procedure the stability of the ECG-signal was improved significantly. The artifacts in an ECG-signal which result during motion may be used as a recognition pattern for fall-events. After the positive results regarding the improvements of the signal's stability, validation tests were conducted in a medical lab with the assistance of a physician. In clinical settings ECG-devices with 10 electrodes are being used but for wearable or emergency purposes (e.g. ambulance) a 3-Channel ECG-device is recommended because it provides less wiring and satisfies the aspect of patient compliance \cite{DrNicoletteWagner}. According to a study by Antonicelli et al. \cite{Antonicelli-ECG}, the use of a 3-lead ECG may be essential to avoid delayed treatment of specific heart diseases, such as elderly people who suffer from chronic heart disease and need continuous ECG monitoring. In addition, the analysis in \cite{Antonicelli-ECG} led to the result that a 3-lead ECG provides qualitatively similar evaluation as a 12-lead ECG. Comparing the measurements taken in the medical lab with the ECG-measurements provided by our ECG-sensor the correct functionality of our sensor could be confirmed. Based on this state of knowledge, ECG-measurements are performed during the fall simulations based on \cite{Li2009} and \cite{Pannurat2014} as part of Fatima Sajid Butt's master thesis \cite{FatimaMasterThesis}.The aim of this work is to evaluate the ECG-patterns for essential artifacts during the fall and to apply machine learning methods to improve the system's ability to detect fall-events and, if possible, predict fall-events with the additional information of the ECG-sensor. The successive illustration shows an ECG-pattern during the fall against a wall (FAW). 
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale=0.26]{Images/NormalECG1.png}
+	\caption[Measured ECG-signal]{Measured ECG-signal}
+	\label{fig:ECGMeasurement}
+\end{figure}
+
+
+
+
+ %The used sensor architecture only differs in signal quality that includes noise and baseline shifting. The reasons for these distinctions in signal quality were explained by the supervising physician. Baseline wander (BW) disturbances are caused by variations in electrode-skin impedance, patient's movement and breathing during the ECG-measurements. Considering amyostasia disturbances the ECG-signal is affected by contraction of muscles near the heart which lead to additional noise in the signal. Muscle contraction is common for people which suffer from tremor or fearing the ECG-measurement and for disabled people. The certified medical devices have an integrated filter which can be applied to smooth the signal \cite{ECGNoise,DrNicoletteWagner}. 
+
 
 
 
@@ -601,11 +618,6 @@ If we consider the used ECG-sensor architecture, we encountered differences in s
 
 Regarding the analysis of the acceleration values, it was observed that some values could lead to misinterpretation. The reason was that the test persons quickly got up after the fall simulation instead of lying on the ground.
 Since not only the measured values but also the video recordings of the fall simulations were analyzed for a profound analysis, the problem could be determined. In order to ensure a better simulation, the test subjects will lie on the ground for at least 2 seconds after simulating a fall. In a real situation, if a person falls and is able to stands up quickly it means that the person is conscious and able to move. On the contrary, if the person falls and does not get up after a while, it means that the person may be unconscious or unable to make the emergency call.  Therefore, waiting at least 2 seconds in our test scenarios is helpful to perform an accurate fall analysis.
-
-
-
-
-
 
 
 \section{Example application of STAMP as hazard analysis method}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  15 SEP 2018 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  15 SEP 2018 19:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -513,7 +513,11 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(./A wearable fall-detection system for smart cities.aux)
+(./A wearable fall-detection system for smart cities.aux
+
+LaTeX Warning: Label `fig:ECGMeasurement' multiply defined.
+
+)
 \openout1 = `"A wearable fall-detection system for smart cities.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
@@ -532,8 +536,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
 LaTeX Font Info:    ... okay on input line 61.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 61.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 61.
-
-(c:/texlive/2018/texmf-dist/tex/latex/tipa/t3cmr.fd
+ (c:/texlive/2018/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 61.
@@ -626,42 +629,43 @@ Package pdftex.def Info: Images/Stankovic-papa2.pdf  used on input line 143.
 <Images/KozinaImpact.png, id=176, 226.446pt x 181.27725pt>
 File: Images/KozinaImpact.png Graphic file (type png)
 <use Images/KozinaImpact.png>
-Package pdftex.def Info: Images/KozinaImpact.png  used on input line 186.
+Package pdftex.def Info: Images/KozinaImpact.png  used on input line 187.
 (pdftex.def)             Requested size: 226.44543pt x 181.27681pt.
- [8 <./Images/KozinaImpact.PNG>] [9]
+ [8 <./Images/KozinaImpact.PNG>]
 (c:/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 218.
+nput line 210.
+ [9]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 219.
-<Images/IoT-EGArquitecture.png, id=200, 245.718pt x 327.624pt>
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 213.
+ [10]
+<Images/IoT-EGArquitecture.png, id=226, 245.718pt x 327.624pt>
 File: Images/IoT-EGArquitecture.png Graphic file (type png)
 <use Images/IoT-EGArquitecture.png>
-Package pdftex.def Info: Images/IoT-EGArquitecture.png  used on input line 241.
+Package pdftex.def Info: Images/IoT-EGArquitecture.png  used on input line 247.
 
 (pdftex.def)             Requested size: 159.7148pt x 212.95306pt.
- [10]
+ [11 <./Images/IoT-EGArquitecture.png>]
 (c:/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (c:/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-) [11 <./Images/IoT-EGArquitecture.png>]
-<Images/belt.png, id=252, 823.57687pt x 249.93375pt>
+) [12]
+<Images/belt.png, id=273, 823.57687pt x 249.93375pt>
 File: Images/belt.png Graphic file (type png)
 <use Images/belt.png>
-Package pdftex.def Info: Images/belt.png  used on input line 302.
-(pdftex.def)             Requested size: 337.6687pt x 102.4735pt.
- [12]
-<images/axis.png, id=267, 1115.66812pt x 936.49875pt>
+Package pdftex.def Info: Images/belt.png  used on input line 308.
+(pdftex.def)             Requested size: 321.19368pt x 97.47377pt.
+ [13 <./Images/belt.png>]
+<images/axis.png, id=285, 1115.66812pt x 936.49875pt>
 File: images/axis.png Graphic file (type png)
 <use images/axis.png>
-Package pdftex.def Info: images/axis.png  used on input line 321.
+Package pdftex.def Info: images/axis.png  used on input line 327.
 (pdftex.def)             Requested size: 323.53548pt x 271.57768pt.
- [13 <./Images/belt.png>] [14 <./Images/axis.png>]
-(./table-FAW.tex
+ [14] [15 <./Images/axis.png>] (./table-FAW.tex
 Overfull \hbox (5.4335pt too wide) in paragraph at lines 28--28
  []|\OT1/cmr/m/sc/10 Time 
  []
@@ -727,32 +731,46 @@ Overfull \hbox (10.62125pt too wide) in alignment at lines 28--28
 [][][][][][] 
  []
 
-) [15]
-<Images/TwoFallsComparative.png, id=302, 1115.16624pt x 662.475pt>
+)
+<Images/TwoFallsComparative.png, id=312, 1115.16624pt x 662.475pt>
 File: Images/TwoFallsComparative.png Graphic file (type png)
 <use Images/TwoFallsComparative.png>
-Package pdftex.def Info: Images/TwoFallsComparative.png  used on input line 378
+Package pdftex.def Info: Images/TwoFallsComparative.png  used on input line 384
 .
 (pdftex.def)             Requested size: 278.79088pt x 165.61835pt.
- [16] [17 <./Images/TwoFallsComparative.png>] [18] [19] [20]
-<Images/IoTTEGFAWGeneratedEvents.png, id=372, 1159.33125pt x 678.535pt>
+ [16]
+
+LaTeX Warning: Text page 17 contains only floats.
+
+
+Overfull \vbox (1.87505pt too high) has occurred while \output is active []
+
+
+[17 <./Images/TwoFallsComparative.png>] [18] [19] [20] [21]
+<Images/IoTTEGFAWGeneratedEvents.png, id=389, 1159.33125pt x 678.535pt>
 File: Images/IoTTEGFAWGeneratedEvents.png Graphic file (type png)
 <use Images/IoTTEGFAWGeneratedEvents.png>
 Package pdftex.def Info: Images/IoTTEGFAWGeneratedEvents.png  used on input lin
-e 510.
+e 516.
 (pdftex.def)             Requested size: 278.24518pt x 162.85172pt.
-<Images/ECG-BAN.png, id=380, 1058.95625pt x 589.20125pt>
+<Images/ECG-BAN.png, id=397, 1058.95625pt x 589.20125pt>
 File: Images/ECG-BAN.png Graphic file (type png)
 <use Images/ECG-BAN.png>
-Package pdftex.def Info: Images/ECG-BAN.png  used on input line 520.
-(pdftex.def)             Requested size: 285.92201pt x 159.08646pt.
- [21 <./Images/IoTTEGFAWGeneratedEvents.png>] [22 <./Images/ECG-BAN.png>]
-<Images/ECG-Harness.png, id=396, 639.38875pt x 495.8525pt>
+Package pdftex.def Info: Images/ECG-BAN.png  used on input line 526.
+(pdftex.def)             Requested size: 275.32213pt x 153.1887pt.
+ [22 <./Images/IoTTEGFAWGeneratedEvents.png>]
+<Images/ECG-Harness.png, id=407, 639.38875pt x 495.8525pt>
 File: Images/ECG-Harness.png Graphic file (type png)
 <use Images/ECG-Harness.png>
-Package pdftex.def Info: Images/ECG-Harness.png  used on input line 532.
-(pdftex.def)             Requested size: 217.3893pt x 168.58762pt.
- [23 <./Images/ECG-Harness.png>] (./table-Synchro.tex
+Package pdftex.def Info: Images/ECG-Harness.png  used on input line 538.
+(pdftex.def)             Requested size: 198.20845pt x 153.71268pt.
+<Images/NormalECG1.png, id=414, 1221.81468pt x 703.87968pt>
+File: Images/NormalECG1.png Graphic file (type png)
+<use Images/NormalECG1.png>
+Package pdftex.def Info: Images/NormalECG1.png  used on input line 545.
+(pdftex.def)             Requested size: 317.66432pt x 183.0044pt.
+ [23 <./Images/ECG-BAN.png>] [24 <./Images/ECG-Harness.png>] [25 <./Images/Norm
+alECG1.png>] (./table-Synchro.tex
 Overfull \hbox (5.4335pt too wide) in paragraph at lines 40--40
  []|\OT1/cmr/m/sc/10 Time 
  []
@@ -798,102 +816,102 @@ Overfull \hbox (10.62125pt too wide) in alignment at lines 40--40
  []
 
 )
-<Images/synchronisation1.png, id=408, 1171.37625pt x 705.63625pt>
+<Images/synchronisation1.png, id=439, 1171.37625pt x 705.63625pt>
 File: Images/synchronisation1.png Graphic file (type png)
 <use Images/synchronisation1.png>
-Package pdftex.def Info: Images/synchronisation1.png  used on input line 572.
+Package pdftex.def Info: Images/synchronisation1.png  used on input line 589.
 (pdftex.def)             Requested size: 269.41087pt x 162.29292pt.
- [24] [25]
-<Images/synchronisation2.png, id=424, 1059.96pt x 619.31375pt>
+<Images/synchronisation2.png, id=441, 1059.96pt x 619.31375pt>
 File: Images/synchronisation2.png Graphic file (type png)
 <use Images/synchronisation2.png>
-Package pdftex.def Info: Images/synchronisation2.png  used on input line 587.
+Package pdftex.def Info: Images/synchronisation2.png  used on input line 604.
 (pdftex.def)             Requested size: 275.5831pt x 161.01778pt.
- [26 <./Images/synchronisation1.png> <./Images/synchronisation2.png>]
-<Images/NormalECG1.png, id=435, 1221.81468pt x 703.87968pt>
+ [26 <./Images/synchronisation1.png>]
 File: Images/NormalECG1.png Graphic file (type png)
 <use Images/NormalECG1.png>
-Package pdftex.def Info: Images/NormalECG1.png  used on input line 597.
+Package pdftex.def Info: Images/NormalECG1.png  used on input line 614.
 (pdftex.def)             Requested size: 335.99075pt x 193.56213pt.
- [27 <./Images/NormalECG1.png>] [28]
-<images/STAMP_OVERVIEW.png, id=452, 904.37875pt x 574.145pt>
+ [27] [28 <./Images/synchronisation2.png>] [29]
+<images/STAMP_OVERVIEW.png, id=473, 904.37875pt x 574.145pt>
 File: images/STAMP_OVERVIEW.png Graphic file (type png)
 <use images/STAMP_OVERVIEW.png>
-Package pdftex.def Info: images/STAMP_OVERVIEW.png  used on input line 631.
+Package pdftex.def Info: images/STAMP_OVERVIEW.png  used on input line 643.
 (pdftex.def)             Requested size: 343.6675pt x 218.17737pt.
- [29]
-<images/STAMP-SynchError.png, id=460, 719.68875pt x 505.28775pt>
+ [30] [31 <./Images/STAMP_OVERVIEW.png>]
+<images/STAMP-SynchError.png, id=488, 719.68875pt x 505.28775pt>
 File: images/STAMP-SynchError.png Graphic file (type png)
 <use images/STAMP-SynchError.png>
-Package pdftex.def Info: images/STAMP-SynchError.png  used on input line 655.
+Package pdftex.def Info: images/STAMP-SynchError.png  used on input line 667.
 (pdftex.def)             Requested size: 316.66403pt x 222.32729pt.
- [30 <./Images/STAMP_OVERVIEW.png>]
-<Images/STAMP2+3level(2).png, id=468, 724.20563pt x 704.6325pt>
+<Images/STAMP2+3level(2).png, id=491, 724.20563pt x 704.6325pt>
 File: Images/STAMP2+3level(2).png Graphic file (type png)
 <use Images/STAMP2+3level(2).png>
-Package pdftex.def Info: Images/STAMP2+3level(2).png  used on input line 663.
+Package pdftex.def Info: Images/STAMP2+3level(2).png  used on input line 675.
 (pdftex.def)             Requested size: 296.92622pt x 288.9012pt.
-
-[31 <./Images/STAMP-SynchError.PNG>] [32 <./Images/STAMP2+3level(2).png>]
-<Images/STAMP4+5level(2).png, id=485, 448.074pt x 566.115pt>
+ [32]
+<Images/STAMP4+5level(2).png, id=501, 448.074pt x 566.115pt>
 File: Images/STAMP4+5level(2).png Graphic file (type png)
 <use Images/STAMP4+5level(2).png>
-Package pdftex.def Info: Images/STAMP4+5level(2).png  used on input line 672.
+Package pdftex.def Info: Images/STAMP4+5level(2).png  used on input line 684.
 (pdftex.def)             Requested size: 291.24464pt x 367.97038pt.
-
-[33 <./Images/STAMP4+5level(2).PNG>] [34] [35]
-(./A wearable fall-detection system for smart cities.bbl
+ [33 <./Images/STAMP-SynchError.PNG>] [34 <./Images/STAMP2+3level(2).png>] [35 
+<./Images/STAMP4+5level(2).PNG>] [36] [37] (./A wearable fall-detection system 
+for smart cities.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
 []\OT1/cmr/m/n/10 EsperTech, Es-pertech web-site, []$\OT1/cmtt/m/n/10 http : / 
 / www . espertech . com / esper /
  []
 
-[36] [37] [38]
+[38] [39]
 Underfull \hbox (badness 2435) in paragraph at lines 147--150
 []\OT1/cmr/m/n/10 International Elec-trotech-ni-cal Com-mis-sion et al., Med-i-
 cal elec-tri-cal
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 718.
- [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 718.
+[40])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 730.
+ [41]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 730.
  (./A wearable fall-detection system for smart cities.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 718.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 718.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 730.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 730.
 Package rerunfilecheck Info: File `"A wearable fall-detection system for smart 
 cities".out' has not changed.
 (rerunfilecheck)             Checksum: 9B665EF2EE4BA952442177B8A410DC7A;964.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 718.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 730.
  ) 
 Here is how much of TeX's memory you used:
- 11101 strings out of 492649
- 151928 string characters out of 6133385
- 277510 words of memory out of 5000000
- 14619 multiletter control sequences out of 15000+600000
- 12077 words of font info for 46 fonts, out of 8000000 for 9000
+ 11127 strings out of 492649
+ 152227 string characters out of 6133385
+ 275936 words of memory out of 5000000
+ 14634 multiletter control sequences out of 15000+600000
+ 12245 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,18n,51p,2379b,1916s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,18n,51p,2379b,2094s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/201
 8/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmti7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmti8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
-8.pfb>
-Output written on "A wearable fall-detection system for smart cities.pdf" (39 p
-ages, 2277300 bytes).
+ist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><c:/texlive/2018/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+t10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on "A wearable fall-detection system for smart cities.pdf" (41 p
+ages, 2283070 bytes).
 PDF statistics:
- 645 PDF objects out of 1000 (max. 8388607)
- 541 compressed objects within 6 object streams
- 171 named destinations out of 1000 (max. 500000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 569 compressed objects within 6 object streams
+ 181 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
