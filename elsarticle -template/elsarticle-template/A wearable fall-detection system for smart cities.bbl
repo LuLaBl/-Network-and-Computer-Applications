@@ -132,6 +132,11 @@ R.~Antonicelli, C.~Ripa, A.~M. Abbatecola, C.~A. Capparuccia, L.~Ferrara,
 \newblock \href {http://dx.doi.org/10.1258/jtt.2011.110613}
   {\path{doi:10.1258/jtt.2011.110613}}.
 
+\bibitem{FatimaMasterThesis}
+F.~{Sajid Butt}, {Fall-detection using machine learning techniues on
+  ECG-signals (Master Thesis)}, Frankfurt Univeristy of Applied Sciences,
+  Hessen - Germany.
+
 \bibitem{ECGNoise}
 U.~Banu, G.~{Patil Dr.}, F.~{Ruksar Dr.}, A survey on sources of noise and
   advanced noise removal techniques of biosignals, Vol. 7(2), International
