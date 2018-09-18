@@ -73,7 +73,7 @@
 \ead{lorena.gutierrez@uca.es}
 \author{Matthias F. Wagner\fnref{label1}}
 \ead{mfwagner@fb2.fra-uas.de}
-\author{I. Medina-Bulo\fnref{label2}}
+\author{Inmaculada Medina-Bulo\fnref{label2}}
 \ead{inmaculada.medina@uca.es}
 \address[label1]{WSN and IOT Research Group Frankfurt University of Applied Sciences, Nibelungenplatz 1, 60318 Frankfurt am Main, Germany}
 \address[label2]{UCASE Software Engineering Research group, University of Cadiz, Av. Universidad de Cadiz, 10, 11519 Puerto Real, Spain}
@@ -540,7 +540,7 @@ The first test measurements with the ECG-sensor confirmed the noisy and unstable
 	\caption[ECG - Harness]{ECG - Harness}
 	\label{fig:ECGHarness}
 \end{figure}
-After completing the development of the ECG-harness the measurements were repeated using the harness solution. A more stable signal resulted, especially during walking and the sitting procedure the stability of the ECG-signal was improved significantly. The artifacts in an ECG-signal which result during motion may be used as a recognition pattern for fall-events. After the positive results regarding the improvements of the signal's stability, validation tests were conducted in a medical lab with the assistance of a physician. In clinical settings ECG-devices with 10 electrodes are being used but for wearable or emergency purposes (e.g. ambulance) a 3-Channel ECG-device is recommended because it provides less wiring and satisfies the aspect of patient compliance \cite{DrNicoletteWagner}. According to a study by Antonicelli et al. \cite{Antonicelli-ECG}, the use of a 3-lead ECG may be essential to avoid delayed treatment of specific heart diseases, such as elderly people who suffer from chronic heart disease and need continuous ECG monitoring. In addition, the analysis in \cite{Antonicelli-ECG} led to the result that a 3-lead ECG provides qualitatively similar evaluation as a 12-lead ECG. Comparing the measurements taken in the medical lab with the ECG-measurements provided by our ECG-sensor the correct functionality of our sensor could be confirmed. Based on this state of knowledge, ECG-measurements are performed during the fall simulations based on \cite{Li2009} and \cite{Pannurat2014} as part of Fatima Sajid Butt's master thesis \cite{FatimaMasterThesis}.The aim of this work is to evaluate the ECG-patterns for essential artifacts during the fall and to apply machine learning methods to improve the system's ability to detect fall-events and, if possible, predict fall-events with the additional information of the ECG-sensor. %The successive illustration shows an ECG-pattern during the fall against a wall (FAW). 
+After completing the development of the ECG-harness the measurements were repeated using the harness solution. A more stable signal resulted, especially during walking and the sitting procedure the stability of the ECG-signal was improved significantly. The artifacts in an ECG-signal which result during motion may be used as a recognition pattern for fall-events. After the positive results regarding the improvements of the signal's stability, validation tests were conducted in a medical lab with the assistance of a physician. In clinical settings ECG-devices with 10 electrodes are being used but for wearable or emergency purposes (e.g. ambulance) a 3-Channel ECG-device is recommended because it provides less wiring and satisfies the aspect of patient compliance \cite{DrNicoletteWagner}. According to a study by Antonicelli et al. \cite{Antonicelli-ECG}, the use of a 3-lead ECG may be essential to avoid delayed treatment of specific heart diseases, such as elderly people who suffer from chronic heart disease and need continuous ECG monitoring. In addition, the analysis in \cite{Antonicelli-ECG} led to the result that a 3-lead ECG provides qualitatively similar evaluation as a 12-lead ECG. Comparing the measurements taken in the medical lab with the ECG-measurements provided by our ECG-sensor the correct functionality of our sensor could be confirmed. Based on this state of knowledge, ECG-measurements are performed during the fall simulations based on \cite{Li2009} and \cite{Pannurat2014} as part of the master thesis \cite{FatimaMasterThesis} in progress. The aim of this work is to evaluate the ECG-patterns for essential artifacts during the fall and to apply machine learning methods to improve the system's ability to detect fall-events and, if possible, predict fall-events with the additional information of the ECG-sensor. A machine learning analysis is also planned in future.%The successive illustration shows an ECG-pattern during the fall against a wall (FAW). 
 %\begin{figure}[!ht]
 %	\centering
 %	\includegraphics[scale=0.285]{Images/NormalECG1.png}
@@ -667,7 +667,7 @@ To apply STAMP the following steps must be followed:
 	The lower level control loops (see Figures \ref{fig:STAMPLevel2+3} and \ref{fig:STAMPLevel4+5}) illustrate a detailed internal control structure of the controlled processes. These processes are interacting as a controller in the lower level structures. Taking into consideration the second level safety control loop, the movement process control (controller) receives the sensor data. Based on the data a control command will be executed to control the BAN which sends a feedback to the movement process controller. The third level control loop zooms into the BAN control, which is the master (controller) that actuates the wake up procedure of the sensor nodes to control the nodes. These will deliver sensor data, including the time to the BAN control.
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[scale=0.42]{Images/STAMP2+3level(2)}
+		\includegraphics[scale=0.56]{Images/STAMP2+3level(3)}
 		\caption[Safety Control Structure - Hierarchy level 2 \& 3]{Safety Control Structure - Hierarchy level 2 \& 3}
 		\label{fig:STAMPLevel2+3}
 	\end{figure} 
@@ -676,12 +676,13 @@ To apply STAMP the following steps must be followed:
 	
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[scale=0.65]{Images/STAMP4+5level(2)}
+		\includegraphics[scale=0.36]{Images/STAMP4+5level(2)}
 		\caption[Safety Control Structure - Hierarchy level 4 \& 5]{Safety Control Structure - Hierarchy level 4 \& 5}
 		\label{fig:STAMPLevel4+5}
 	\end{figure}
-
-	Taking into consideration the fifth level of the control loop which is depicted in Figure \ref{fig:STAMPLevel4+5} an accurate view of the controlled process Bluetooth sensor detection control in level 4 is provided. The master Bluetooth sensor detection control (controller) actuates a connection command via BLE (actuator) to establish a connection to the sensors (controlled process: Bluetooth connection controller) which sends a list of available sensor's services and characteristics to the controller. 
+    \newpage
+    
+	Taking into consideration the fifth level of the control loop which is depicted in Figure \ref{fig:STAMPLevel4+5} an accurate view of the controlled process Bluetooth sensor detection control in level 4 is provided. The master Bluetooth sensor detection control (controller) actuates a connection command via BLE (actuator) to establish a connection to the sensors (controlled process: Bluetooth connection control) which sends a list of available sensor's services and characteristics to the controller. 
 	
 	All these hazards (see red labels in Figure \ref{fig:STAMPLevel1}, \ref{fig:STAMPLevel2+3}, \ref{fig:STAMPLevel4+5}) lead to safety constraints.
 	Some of the safety constraints are defined as follows when considering the control loop structures of the second and third system levels:
@@ -713,7 +714,7 @@ However, first the synchronization problem of the BAN must be solved, which can 
 
 
 \section*{Acknowledgment}
-We would like to thank the test subjects for the time they spent testing the fall detection prototype. The feedback and test results are very valuable for the further development of the detection system. We would particularly like to thank Dr. Nicolette Fritsch-Wagner for her assistance during the validation of our ECG sensor and for explaining how important the use of medical sensors (ECG sensors) can be for the detection of falls. The information obtained is of great importance and is necessary for the efficient development of reliable fall detection solution. 
+We would like to thank the voluntary test subjects for the time they spent testing the fall detection prototype. The feedback and test results are very valuable for the further development of the detection system. We would particularly like to thank Dr. med. Nicolette Fritsch-Wagner for her assistance during the validation of our ECG sensor and for explaining how important the use of medical sensors (ECG sensors) can be for the detection of falls. 
 
 This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
 

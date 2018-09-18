@@ -16,14 +16,14 @@ L.~{La Blunda}, M.~Wagner, Fall-detection belt based on body area networks, in:
   Ingenieurswetenschappen KU Leuven}, Leuven (Belgium), 2016, pp. 21--24.
 
 \bibitem{LaBlunda.2016b}
-L.~{La Blunda}, M.~Wagner, The usage of body area networks for fall-detection,
-  in: Proceedings of the eleventh International Network Conference (INC 2016),
-  {Alekseev, S.} and {Dowland, P. S.} and {Ghita, B.} and {Schneider, O.},
-  Frankfurt am Main (Germany), 2016, pp. 159--163.
+L.~{La Blunda}, M.~Wagner, {The Usage of Body Area Networks for
+  Fall-Detection}, in: Proceedings of the eleventh International Network
+  Conference (INC 2016), {Alekseev, S.} and {Dowland, P. S.} and {Ghita, B.}
+  and {Schneider, O.}, Frankfurt am Main (Germany), 2016, pp. 159--163.
 
 \bibitem{Esper:2016}
 EsperTech, Espertech website, \url{http://www.espertech.com/esper/index.php},
-  {L}ast access: 08-08-2018 (2018).
+  {L}ast access: 08-08-2018.
 
 \bibitem{Gutierrez2017}
 L.~Gutiérrez-Madroñal, I.~Medina-Bulo, J.~Domínguez-Jiménez, Iot–teg:
@@ -32,9 +32,9 @@ L.~Gutiérrez-Madroñal, I.~Medina-Bulo, J.~Domínguez-Jiménez, Iot–teg:
   {\path{doi:https://doi.org/10.1016/j.jss.2017.06.037}}.
 
 \bibitem{TesisGutierrez2017}
-L.~Gutiérrez-Madroñal, Generación automática de casos en procesamiento de
-  eventos con epl - authomatic generation of cases in event processing using
-  epl, Ph.D. thesis, University of Cadiz, 2017.
+L.~Gutiérrez-Madroñal, {Generación Automática de Casos en Procesamiento de
+  Eventos con EPL - Authomatic Generation of Cases in Event Processing using
+  EPL}, Ph.D. thesis, University of Cadiz, 2017.
 
 \bibitem{leveson2011engineering}
 N.~Leveson, Engineering a safer world: Systems thinking applied to safety, MIT
@@ -113,8 +113,8 @@ T.~J{\"a}ms{\"a}, M.~Kangas, I.~Vikman, L.~Nyberg, R.~Korpelainen, Fall
   the Estonian Academy of Sciences 63~(3) (2014) 253.
 
 \bibitem{LuigiMasterThesis}
-L.~{La Blunda}, {Die Sturzerkennung basierend auf Body Area Networks (Master
-  Thesis)}, Frankfurt Univeristy of Applied Sciences - Germany2016.
+L.~{La Blunda}, {Die Sturzerkennung basierend auf Body Area Networks}, Master's
+  thesis, Frankfurt Univeristy of Applied Sciences - Germany (2016).
 
 \bibitem{FallRepo}
 L.~Gutiérrez-Madroñal, Github repository,
@@ -122,20 +122,20 @@ L.~Gutiérrez-Madroñal, Github repository,
 
 \bibitem{DrNicoletteWagner}
 N.~{Fritsch-Wagner Dr.}, {Private communication - ECG-validation and
-  consultation in medical lab}, \url{https://www.hp-weglache.de/}, 2017.
+  consultation in medical lab}, 2017.
 
 \bibitem{Antonicelli-ECG}
 R.~Antonicelli, C.~Ripa, A.~M. Abbatecola, C.~A. Capparuccia, L.~Ferrara,
-  L.~Spazzafumo, Validation of the 3-lead tele-ecg versus the 12-lead tele-ecg
-  and the conventional 12-lead ecg method in older people, Journal of
+  L.~Spazzafumo, {Validation of the 3-lead tele-ECG versus the 12-lead tele-ECG
+  and the conventional 12-lead ECG method in older people}, Journal of
   Telemedicine and Telecare 18~(2) (2012) 104--108, pMID: 22267307.
 \newblock \href {http://dx.doi.org/10.1258/jtt.2011.110613}
   {\path{doi:10.1258/jtt.2011.110613}}.
 
 \bibitem{FatimaMasterThesis}
 F.~{Sajid Butt}, {Fall-detection using machine learning techniques on
-  ECG-signals (Master Thesis)}, Frankfurt Univeristy of Applied Sciences,
-  Hessen - Germany.
+  ECG-signals}, Master's thesis, Frankfurt Univeristy of Applied Sciences -
+  Germany, (in progress) (2018).
 
 \bibitem{ECGNoise}
 U.~Banu, G.~{Patil Dr.}, F.~{Ruksar Dr.}, A survey on sources of noise and
@@ -150,7 +150,7 @@ U.~Banu, G.~{Patil Dr.}, F.~{Ruksar Dr.}, A survey on sources of noise and
 
 \bibitem{STAMPThesis}
 V.~{Balgos}, {A Systems Theoretic Application to Design for the Safety of
-  Medical Diagnostic Devices (Master Thesis)}, University of Missouri, Columbia
-  - USA.
+  Medical Diagnostic Devices}, Master's thesis, University of Missouri,
+  Columbia - USA (2012).
 
 \end{thebibliography}
