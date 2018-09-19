@@ -114,8 +114,8 @@ To counteract these life-threatening events fast assistance is necessary due to 
 	\caption[Escalation scheme]{Escalation scheme simulation~\cite{LaBlunda.2016,LaBlunda.2016b}}
 	\label{fig:escalationscheme}
 \end{figure}
-A prototype in form of a belt was developed which includes an Electrocardiogram (ECG) - harness and is based on a five sensor nodes Body Area Network (BAN). Each sensor node of the belt acquires continuously acceleration data including time stamp and the sensor node of the ECG-harness provides the analog value of the voltage including time stamp. In case of a fall the system should be capable to autonomously call the emergency services. Applying sensor fusion of physical and medical sensors we expect to improve the reliability of fall-detection and possibly fall-prevention. Another expectation is that the integration of medical sensors may facilitate the classification of different fall-types. In terms of smart cities our expectancy is to significantly provide an important e-health service for smart cities which is an essential life-saver for the population.
-With reference to the development of a reliable fall-detection solution and the above mentioned expectations our ongoing research will be confronted with the following questions:
+A prototype in form of a belt was developed which includes an Electrocardiogram (ECG) - harness and is based on a five sensor nodes Body Area Network (BAN). Each sensor node of the belt acquires continuously acceleration data including time stamp and the sensor node of the ECG-harness provides the analog value of the voltage including time stamp. In case of a fall the system should be capable to autonomously call the emergency services. Applying sensor fusion of physical and medical sensors we expect to improve the reliability of fall-detection and possibly fall-prevention. Another expectation is that the integration of medical sensors may facilitate the classification of different fall-types. In addition, EPLs are used to specify critical situations, extract information, and decide correctly on the basis of the collected data. Given that testing is essential for the system, test events are generated that simulate different types of falls. In literature, several types of falls are described and it is important to recognize all these falls. To generate the test events, the IoT-TEG tool is used which is capable to adapt the test events according to the type of fall.
+In terms of smart cities our expectancy is to significantly provide an important e-health service for smart cities which is an essential life-saver for the population. With reference to the development of a reliable fall-detection solution and the above mentioned expectations our ongoing research will be confronted with the following questions:
 \begin{itemize}
 	\item Will the integration of medical sensors improve the reliability of the fall detection system?
 	\item Can the system achieve a high level of acceptance among people?
@@ -659,7 +659,7 @@ To apply STAMP the following steps must be followed:
 	The sensors provide sensor data to the controller (smartphone). The smartphone contains a data acquisition algorithm to collect the incoming data and a fall-detection algorithm to analyze this data. If the event corresponds to a fall, the alert system on the mobile device will call the emergency services for intervention. The actuator part of the system contains the control of the data acquisition process, i.e. timers, sleep mode etc.
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[scale=0.44]{images/STAMP-SynchError}
+		\includegraphics[scale=0.35]{images/STAMP_SynchError}
 		\caption[System Safety Control Structure]{System Safety Control Structure - Hierarchy level 1) $\rightarrow$ Black label (system components), \textcolor{blue}{blue label (description of system components)}, \textcolor{red}{red label (possible hazards)}}
 		\label{fig:STAMPLevel1}
 	\end{figure}
@@ -667,7 +667,7 @@ To apply STAMP the following steps must be followed:
 	The lower level control loops (see Figures \ref{fig:STAMPLevel2+3} and \ref{fig:STAMPLevel4+5}) illustrate a detailed internal control structure of the controlled processes. These processes are interacting as a controller in the lower level structures. Taking into consideration the second level safety control loop, the movement process control (controller) receives the sensor data. Based on the data a control command will be executed to control the BAN which sends a feedback to the movement process controller. The third level control loop zooms into the BAN control, which is the master (controller) that actuates the wake up procedure of the sensor nodes to control the nodes. These will deliver sensor data, including the time to the BAN control.
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[scale=0.56]{Images/STAMP2+3level(3)}
+		\includegraphics[scale=0.54]{Images/STAMP2+3level(3)}
 		\caption[Safety Control Structure - Hierarchy level 2 \& 3]{Safety Control Structure - Hierarchy level 2 \& 3}
 		\label{fig:STAMPLevel2+3}
 	\end{figure} 
@@ -676,7 +676,7 @@ To apply STAMP the following steps must be followed:
 	
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[scale=0.36]{Images/STAMP4+5level(2)}
+		\includegraphics[scale=0.34]{Images/STAMP4+5level(2)}
 		\caption[Safety Control Structure - Hierarchy level 4 \& 5]{Safety Control Structure - Hierarchy level 4 \& 5}
 		\label{fig:STAMPLevel4+5}
 	\end{figure}
@@ -707,7 +707,7 @@ This work presents a wearable solution for fall detection that enhances the bene
 
 The tests performed with the test persons provided positive feedback regarding the use of this solution and a high acceptance of the system in application with smart cities was achieved. These results also show that falls are a general problem in our daily life, which are underestimated and can lead to serious injuries or even fatal consequences. 
 
-The test measurements carried out with the additional ECG-sensor were positive and confirmed the approach of Gjoresk et al. \cite{Gjoreski2014} which allows a more accurate fall detection and, if necessary, a fall prediction. In the further development process it is planned to use machine learning and complementary Complex Event Processing (CEP) in order to use certain ECG patterns in combination with the acceleration data. These should enhance a reliable detection of falls.
+The test measurements carried out with the additional ECG-sensor were positive and confirmed the approach of Gjoresk et al. \cite{Gjoreski2014} which allows a more accurate fall detection and, if necessary, a fall prediction. Additionally, the usage of the IoT-TEG tool \cite{Gutierrez2017,TesisGutierrez2017} facilitates the generation of events to recognize falls which are based on \cite{Kozina}. We have the ability to assign behavior rules to as many event attributes as the event type contains, and the event attribute values follow the specified behavior. IoT-TEG \cite{Gutierrez2017,TesisGutierrez2017} has the ability to adapt the behavior of the analyzed event attribute, because it was designed to test any type of system using test events. In the further development process it is planned to use machine learning and complementary Complex Event Processing (CEP) in order to use certain ECG-patterns in combination with the acceleration data. These should enhance a reliable detection of falls. Since the IOT-TEG tool \cite{Gutierrez2017,TesisGutierrez2017} is in constant development to ensure an accurate analysis of falls, further functionalities will be integrated in the future to meet all test requirements. In order to improve the tool, it is necessary to analyze further fall events.
 
 However, first the synchronization problem of the BAN must be solved, which can compromise the system's functionality. In order to solve this problem, a new hardware platform should be used, which contains a real time operating system, which facilitates the synchronization of different tasks in a wireless sensor network. In addition, the new microcontroller should also meet the requirements of patient compliance (see subsection \ref{subsec:Architecture}).
 
@@ -719,8 +719,11 @@ We would like to thank the voluntary test subjects for the time they spent testi
 This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
 
 
+\section*{Dataset}
+%\bibliography1{datasets}
+
 \section*{References}
 
-\bibliography{mybibfile}
+\bibliography2{mybibfile}
 
 \end{document}
