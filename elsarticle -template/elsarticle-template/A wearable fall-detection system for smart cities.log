@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  19 SEP 2018 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  19 SEP 2018 13:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -607,28 +607,12 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 102.
 (c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-Package natbib Warning: Citation `WHO2018' on page 1 undefined on input line 10
-7.
-
-
-Package natbib Warning: Citation `WHO2018' on page 1 undefined on input line 10
-9.
-
-<Images/EscalationScheme.png, id=65, 789.70032pt x 551.05875pt>
+<Images/EscalationScheme.png, id=67, 789.70032pt x 551.05875pt>
 File: Images/EscalationScheme.png Graphic file (type png)
 <use Images/EscalationScheme.png>
 Package pdftex.def Info: Images/EscalationScheme.png  used on input line 113.
 (pdftex.def)             Requested size: 300.08923pt x 209.4045pt.
-
-Package natbib Warning: Citation `LaBlunda.2016' on page 1 undefined on input l
-ine 114.
-
-
-Package natbib Warning: Citation `LaBlunda.2016b' on page 1 undefined on input 
-line 114.
-
-[1
+ [1
 
 
 {c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
@@ -647,212 +631,47 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
                                                   \fi \fi 
 l.123 	\item H
               ow does the ECG-signal change during a fall situation? - Can r...
- <./Images/EscalationScheme.png>]
-
-Package natbib Warning: Citation `Esper:2016' on page 4 undefined on input line
- 127.
-
-
-Package natbib Warning: Citation `Gutierrez2017' on page 4 undefined on input l
-ine 127.
-
-
-Package natbib Warning: Citation `TesisGutierrez2017' on page 4 undefined on in
-put line 127.
-
-
-Package natbib Warning: Citation `leveson2011engineering' on page 4 undefined o
-n input line 127.
-
-
-Package natbib Warning: Citation `Igual2013' on page 4 undefined on input line 
-132.
-
-[4]
-
-Package natbib Warning: Citation `Igual2013' on page 5 undefined on input line 
-139.
-
-
-Package natbib Warning: Citation `Igual2013' on page 5 undefined on input line 
-139.
-
-
-Package natbib Warning: Citation `Li2009' on page 5 undefined on input line 149
-.
-
-
-Package natbib Warning: Citation `Li2009' on page 5 undefined on input line 149
-.
-
-[5]
-<Images/Stankovic-papa2.pdf, id=110, 597.23125pt x 845.1575pt>
+ <./Images/EscalationScheme.png>] [4] [5]
+<Images/Stankovic-papa2.pdf, id=131, 597.23125pt x 845.1575pt>
 File: Images/Stankovic-papa2.pdf Graphic file (type pdf)
 <use Images/Stankovic-papa2.pdf>
 Package pdftex.def Info: Images/Stankovic-papa2.pdf  used on input line 152.
 (pdftex.def)             Requested size: 209.03406pt x 295.80956pt.
-
-
-Package natbib Warning: Citation `Li2009' on page 6 undefined on input line 153
-.
-
-
-Package natbib Warning: Citation `Li2009' on page 6 undefined on input line 170
-.
-
-
-Package natbib Warning: Citation `Li2009' on page 6 undefined on input line 170
-.
-
-
-Package natbib Warning: Citation `colladomachine' on page 6 undefined on input 
-line 170.
-
-[6pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
-has been already used, duplicate ignored
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.171 
-       <./Images/Stankovic-papa2.pdf>]
-
-Package natbib Warning: Citation `Luder2009' on page 7 undefined on input line 
-172.
-
-
-Package natbib Warning: Citation `Luder2009' on page 7 undefined on input line 
-172.
-
-
-Package natbib Warning: Citation `Luder2009' on page 7 undefined on input line 
-172.
-
-
-Package natbib Warning: Citation `Gjoreski2014' on page 7 undefined on input li
-ne 172.
-
-
-Package natbib Warning: Citation `Gjoreski2014' on page 7 undefined on input li
-ne 172.
-
-
-Package natbib Warning: Citation `Li2009' on page 7 undefined on input line 172
-.
-
-
-Package natbib Warning: Citation `Gjoreski2014' on page 7 undefined on input li
-ne 172.
-
-
-Package natbib Warning: Citation `Gjoreski2014' on page 7 undefined on input li
-ne 172.
-
-
-Package natbib Warning: Citation `Gjoreski2014' on page 7 undefined on input li
-ne 172.
-
-[7]
-
-Package natbib Warning: Citation `Gjoreski2014' on page 8 undefined on input li
-ne 181.
-
-
-Package natbib Warning: Citation `Kozina' on page 8 undefined on input line 181
-.
-
-[8]
-<Images/KozinaImpact.png, id=141, 226.446pt x 181.27725pt>
+       <./Images/Stankovic-papa2.pdf>] [7] [8]
+<Images/KozinaImpact.png, id=182, 226.446pt x 181.27725pt>
 File: Images/KozinaImpact.png Graphic file (type png)
 <use Images/KozinaImpact.png>
 Package pdftex.def Info: Images/KozinaImpact.png  used on input line 196.
 (pdftex.def)             Requested size: 226.44543pt x 181.27681pt.
-
-
-Package natbib Warning: Citation `Kozina' on page 9 undefined on input line 197
-.
-
-
-Package natbib Warning: Citation `Esper:2016' on page 9 undefined on input line
- 200.
-
-
-Package natbib Warning: Citation `Li2009' on page 9 undefined on input line 202
-.
-
-
-Package natbib Warning: Citation `Pannurat2014' on page 9 undefined on input li
-ne 202.
-
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
-has been already used, duplicate ignored
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.203 
        <./Images/KozinaImpact.PNG>]
-
-Package natbib Warning: Citation `Esper:2016' on page 10 undefined on input lin
-e 207.
-
 (c:/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 219.
-
-
-Package natbib Warning: Citation `Kozina' on page 10 undefined on input line 21
-9.
-
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 222.
-[10]
-
-Package natbib Warning: Citation `TesisGutierrez2017' on page 11 undefined on i
-nput line 248.
-
-
-Package natbib Warning: Citation `Gutierrez2017' on page 11 undefined on input 
-line 248.
-
-[11]
-<Images/IoT-EGArquitecture.png, id=182, 245.718pt x 327.624pt>
+ [10] [11]
+<Images/IoT-EGArquitecture.png, id=231, 245.718pt x 327.624pt>
 File: Images/IoT-EGArquitecture.png Graphic file (type png)
 <use Images/IoT-EGArquitecture.png>
 Package pdftex.def Info: Images/IoT-EGArquitecture.png  used on input line 256.
 
 (pdftex.def)             Requested size: 172.00142pt x 229.33522pt.
-
-
-Package natbib Warning: Citation `TesisGutierrez2017' on page 12 undefined on i
-nput line 257.
-
-
-Package natbib Warning: Citation `Gutierrez2017' on page 12 undefined on input 
-line 257.
-
-
-Package natbib Warning: Citation `TesisGutierrez2017' on page 12 undefined on i
-nput line 262.
-
-
-Package natbib Warning: Citation `Gutierrez2017' on page 12 undefined on input 
-line 262.
-
-
-Package natbib Warning: Citation `TesisGutierrez2017' on page 12 undefined on i
-nput line 265.
-
-
-Package natbib Warning: Citation `gutierrez2018' on page 12 undefined on input 
-line 265.
-
-
-Package natbib Warning: Citation `jia2011' on page 12 undefined on input line 2
-66.
-
-[12pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.4}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -864,48 +683,20 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (c:/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-
-Package natbib Warning: Citation `LaBlunda.2016' on page 13 undefined on input 
-line 314.
-
-
-Package natbib Warning: Citation `LaBlunda.2016b' on page 13 undefined on input
- line 314.
-
-
-Package natbib Warning: Citation `LaBlunda.2016' on page 13 undefined on input 
-line 314.
-
-
-Package natbib Warning: Citation `LaBlunda.2016b' on page 13 undefined on input
- line 314.
-
-
-Package natbib Warning: Citation `jamsa2014fall' on page 13 undefined on input 
-line 314.
-
-<Images/belt.png, id=192, 823.57687pt x 249.93375pt>
+<Images/belt.png, id=255, 823.57687pt x 249.93375pt>
 File: Images/belt.png Graphic file (type png)
 <use Images/belt.png>
 Package pdftex.def Info: Images/belt.png  used on input line 317.
 (pdftex.def)             Requested size: 341.77803pt x 103.72057pt.
-
-Package natbib Warning: Citation `LaBlunda.2016' on page 13 undefined on input 
-line 318.
-
-
-Package natbib Warning: Citation `LaBlunda.2016b' on page 13 undefined on input
- line 318.
-
-[13] [14pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.5}) has been already used, duplicate ignored
+ [13] [14pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.328 	\item \textbf
                     {X-Acceleration} $\rightarrow$ represents the accelerati...
  <./Images/belt.png>]
-<images/axis.png, id=224, 1115.66812pt x 936.49875pt>
+<images/axis.png, id=290, 1115.66812pt x 936.49875pt>
 File: images/axis.png Graphic file (type png)
 <use images/axis.png>
 Package pdftex.def Info: images/axis.png  used on input line 336.
@@ -915,35 +706,13 @@ Overfull \hbox (6.43732pt too wide) in paragraph at lines 336--337
  [][] 
  []
 
-
-Package natbib Warning: Citation `LaBlunda.2016' on page 15 undefined on input 
-line 337.
-
-
-Package natbib Warning: Citation `LuigiMasterThesis' on page 15 undefined on in
-put line 337.
-
-
-Package natbib Warning: Citation `Kozina' on page 15 undefined on input line 34
-1.
-
-[15]
-
-Package natbib Warning: Citation `FallRepo' on page 16 undefined on input line 
-350.
-
-[16pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
- has been already used, duplicate ignored
+[15] [16pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.360 
-       <./Images/axis.png>]
-
-Package natbib Warning: Citation `Luder2009' on page 17 undefined on input line
- 372.
-
-(./table-FAW.tex
+       <./Images/axis.png>] (./table-FAW.tex
 Overfull \hbox (5.4335pt too wide) in paragraph at lines 28--28
  []|\OT1/cmr/m/sc/10 Time 
  []
@@ -1010,7 +779,7 @@ Overfull \hbox (10.62125pt too wide) in alignment at lines 28--28
  []
 
 ) [17]
-<Images/TwoFallsComparative.png, id=254, 1115.16624pt x 662.475pt>
+<Images/TwoFallsComparative.png, id=328, 1115.16624pt x 662.475pt>
 File: Images/TwoFallsComparative.png Graphic file (type png)
 <use Images/TwoFallsComparative.png>
 Package pdftex.def Info: Images/TwoFallsComparative.png  used on input line 389
@@ -1030,106 +799,39 @@ s been already used, duplicate ignored
                                                   \fi \fi 
 l.397 	\item
              the variation of its values while the person is walking. We hav...
- <./Images/TwoFallsComparative.png>]
-
-Package natbib Warning: Citation `TesisGutierrez2017' on page 19 undefined on i
-nput line 418.
-
-
-Package natbib Warning: Citation `Gutierrez2017' on page 19 undefined on input 
-line 418.
-
-[19] [20] [21] [22]
-<Images/IoTTEGFAWGeneratedEvents.png, id=322, 1159.33125pt x 678.535pt>
+ <./Images/TwoFallsComparative.png>] [19] [20] [21] [22]
+<Images/IoTTEGFAWGeneratedEvents.png, id=397, 1159.33125pt x 678.535pt>
 File: Images/IoTTEGFAWGeneratedEvents.png Graphic file (type png)
 <use Images/IoTTEGFAWGeneratedEvents.png>
 Package pdftex.def Info: Images/IoTTEGFAWGeneratedEvents.png  used on input lin
 e 518.
 (pdftex.def)             Requested size: 301.41902pt x 176.41493pt.
-
-
-Package natbib Warning: Citation `Igual2013' on page 23 undefined on input line
- 525.
-
-
-Package natbib Warning: Citation `Li2009' on page 23 undefined on input line 52
-5.
-
-
-Package natbib Warning: Citation `Luder2009' on page 23 undefined on input line
- 525.
-
-
-Package natbib Warning: Citation `Pannurat2014' on page 23 undefined on input l
-ine 525.
-
-
-Package natbib Warning: Citation `jamsa2014fall' on page 23 undefined on input 
-line 525.
-
-
-Package natbib Warning: Citation `Gjoreski2014' on page 23 undefined on input l
-ine 525.
-
-
-Package natbib Warning: Citation `Gjoreski2014' on page 23 undefined on input l
-ine 525.
-
-<Images/ECG-BAN.png, id=323, 1058.95625pt x 589.20125pt>
+<Images/ECG-BAN.png, id=405, 1058.95625pt x 589.20125pt>
 File: Images/ECG-BAN.png Graphic file (type png)
 <use Images/ECG-BAN.png>
 Package pdftex.def Info: Images/ECG-BAN.png  used on input line 528.
 (pdftex.def)             Requested size: 307.08945pt x 170.86398pt.
-[23pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
- has been already used, duplicate ignored
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.8}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.533 
-       <./Images/IoTTEGFAWGeneratedEvents.png>]
-
-Package natbib Warning: Citation `Gjoreski2014' on page 24 undefined on input l
-ine 534.
-
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
- has been already used, duplicate ignored
+       <./Images/IoTTEGFAWGeneratedEvents.png>] [24pdfTeX warning (ext4): desti
+nation with the same identifier (name{figure.9}) has been already used, duplica
+te ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.535 
        <./Images/ECG-BAN.png>]
-<Images/ECG-Harness.png, id=338, 639.38875pt x 495.8525pt>
+<Images/ECG-Harness.png, id=422, 639.38875pt x 495.8525pt>
 File: Images/ECG-Harness.png Graphic file (type png)
 <use Images/ECG-Harness.png>
 Package pdftex.def Info: Images/ECG-Harness.png  used on input line 539.
 (pdftex.def)             Requested size: 204.60857pt x 158.67604pt.
-
-
-Package natbib Warning: Citation `DrNicoletteWagner' on page 25 undefined on in
-put line 543.
-
-
-Package natbib Warning: Citation `Antonicelli-ECG' on page 25 undefined on inpu
-t line 543.
-
-
-Package natbib Warning: Citation `Antonicelli-ECG' on page 25 undefined on inpu
-t line 543.
-
-
-Package natbib Warning: Citation `Li2009' on page 25 undefined on input line 54
-3.
-
-
-Package natbib Warning: Citation `Pannurat2014' on page 25 undefined on input l
-ine 543.
-
-
-Package natbib Warning: Citation `FatimaMasterThesis' on page 25 undefined on i
-nput line 543.
-
-[25pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
-) has been already used, duplicate ignored
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.10
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1180,7 +882,7 @@ Overfull \hbox (10.62125pt too wide) in alignment at lines 40--40
  []
 
 )
-<Images/synchronisation1.png, id=354, 1171.37625pt x 705.63625pt>
+<Images/synchronisation1.png, id=447, 1171.37625pt x 705.63625pt>
 File: Images/synchronisation1.png Graphic file (type png)
 <use Images/synchronisation1.png>
 Package pdftex.def Info: Images/synchronisation1.png  used on input line 587.
@@ -1193,7 +895,7 @@ Package pdftex.def Info: Images/synchronisation1.png  used on input line 587.
 l.593  \item O
               n the other hand, some sensors transmit more data than the oth...
 ]
-<Images/synchronisation2.png, id=360, 1059.96pt x 619.31375pt>
+<Images/synchronisation2.png, id=453, 1059.96pt x 619.31375pt>
 File: Images/synchronisation2.png Graphic file (type png)
 <use Images/synchronisation2.png>
 Package pdftex.def Info: Images/synchronisation2.png  used on input line 596.
@@ -1212,64 +914,37 @@ l.600 \end{itemize}
 l.600 \end{itemize}
                     <./Images/synchronisation1.png> <./Images/synchronisation2.
 png>]
-<Images/NormalECG1.png, id=369, 1221.81468pt x 703.87968pt>
+<Images/NormalECG1.png, id=462, 1221.81468pt x 703.87968pt>
 File: Images/NormalECG1.png Graphic file (type png)
 <use Images/NormalECG1.png>
 Package pdftex.def Info: Images/NormalECG1.png  used on input line 607.
 (pdftex.def)             Requested size: 329.89438pt x 190.05005pt.
-
-
-Package natbib Warning: Citation `ECGNoise' on page 29 undefined on input line 
-611.
-
-
-Package natbib Warning: Citation `DrNicoletteWagner' on page 29 undefined on in
-put line 611.
-
-[29pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
-) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.615 
-       <./Images/NormalECG1.png>]
-
-Package natbib Warning: Citation `international2005medical' on page 30 undefine
-d on input line 621.
-
-
-Package natbib Warning: Citation `STAMPThesis' on page 30 undefined on input li
-ne 621.
-
-
-Package natbib Warning: Citation `leveson2011engineering' on page 30 undefined 
-on input line 623.
-
-[30]
-<images/STAMP_OVERVIEW.png, id=380, 904.37875pt x 574.145pt>
-File: images/STAMP_OVERVIEW.png Graphic file (type png)
-<use images/STAMP_OVERVIEW.png>
-Package pdftex.def Info: images/STAMP_OVERVIEW.png  used on input line 637.
-(pdftex.def)             Requested size: 325.57611pt x 206.69203pt.
-
-
-Package natbib Warning: Citation `leveson2011engineering' on page 31 undefined 
-on input line 638.
-
-[31]
-<images/STAMP_SynchError.png, id=388, 906.38625pt x 817.0525pt>
-File: images/STAMP_SynchError.png Graphic file (type png)
-<use images/STAMP_SynchError.png>
-Package pdftex.def Info: images/STAMP_SynchError.png  used on input line 662.
-(pdftex.def)             Requested size: 317.23993pt x 285.97266pt.
- [32pdfTeX warning (ext4): destination with the same identifier (name{figure.14
+ [29pdfTeX warning (ext4): destination with the same identifier (name{figure.13
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.666 
-       <./Images/STAMP_OVERVIEW.png>]
-<Images/STAMP2+3level(3).png, id=396, 476.982pt x 632.96475pt>
+l.615 
+       <./Images/NormalECG1.png>] [30]
+<images/STAMP_OVERVIEW.png, id=481, 904.37875pt x 574.145pt>
+File: images/STAMP_OVERVIEW.png Graphic file (type png)
+<use images/STAMP_OVERVIEW.png>
+Package pdftex.def Info: images/STAMP_OVERVIEW.png  used on input line 637.
+(pdftex.def)             Requested size: 325.57611pt x 206.69203pt.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.14
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.644 	\item
+             Controller <./Images/STAMP_OVERVIEW.png>]
+<images/STAMP_SynchError.png, id=491, 906.38625pt x 817.0525pt>
+File: images/STAMP_SynchError.png Graphic file (type png)
+<use images/STAMP_SynchError.png>
+Package pdftex.def Info: images/STAMP_SynchError.png  used on input line 662.
+(pdftex.def)             Requested size: 317.23993pt x 285.97266pt.
+ [32]
+<Images/STAMP2+3level(3).png, id=498, 476.982pt x 632.96475pt>
 File: Images/STAMP2+3level(3).png Graphic file (type png)
 <use Images/STAMP2+3level(3).png>
 Package pdftex.def Info: Images/STAMP2+3level(3).png  used on input line 670.
@@ -1288,99 +963,70 @@ red
                                                   \fi \fi 
 l.676 	
         <./Images/STAMP2+3level(3).png>]
-<Images/STAMP4+5level(2).png, id=413, 818.05624pt x 1082.0425pt>
+<Images/STAMP4+5level(2).png, id=515, 818.05624pt x 1082.0425pt>
 File: Images/STAMP4+5level(2).png Graphic file (type png)
 <use Images/STAMP4+5level(2).png>
 Package pdftex.def Info: Images/STAMP4+5level(2).png  used on input line 679.
 (pdftex.def)             Requested size: 278.13544pt x 367.88959pt.
- [35] [36pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.17}) has been already used, duplicate ignored
+ [35pdfTeX warning (ext4): destination with the same identifier (name{figure.17
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.690 		\item
-              Second level control structure $\rightarrow$ to avoid data los...
- <./Images/STAMP4+5level(2).png>] [37]
+l.683     \newpage
+                   <./Images/STAMP4+5level(2).png>] [36] [37] [38]
+(./A wearable fall-detection system for smart cities.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+[]\OT1/cmr/m/n/10 EsperTech, Es-pertech web-site, []$\OT1/cmtt/m/n/10 http : / 
+/ www . espertech . com / esper /
+ []
 
-Package natbib Warning: Citation `Gjoreski2014' on page 38 undefined on input l
-ine 710.
+[39] [40]
+Underfull \hbox (badness 2435) in paragraph at lines 147--150
+[]\OT1/cmr/m/n/10 International Elec-trotech-ni-cal Com-mis-sion et al., Med-i-
+cal elec-tri-cal
+ []
 
-
-Package natbib Warning: Citation `Gutierrez2017' on page 38 undefined on input 
-line 710.
-
-
-Package natbib Warning: Citation `TesisGutierrez2017' on page 38 undefined on i
-nput line 710.
-
-
-Package natbib Warning: Citation `Kozina' on page 38 undefined on input line 71
-0.
-
-
-Package natbib Warning: Citation `Gutierrez2017' on page 38 undefined on input 
-line 710.
-
-
-Package natbib Warning: Citation `TesisGutierrez2017' on page 38 undefined on i
-nput line 710.
-
-
-Package natbib Warning: Citation `Gutierrez2017' on page 38 undefined on input 
-line 710.
-
-
-Package natbib Warning: Citation `TesisGutierrez2017' on page 38 undefined on i
-nput line 710.
-
-[38] (./A wearable fall-detection system for smart cities.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 8.
-
-)
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 729.
-[39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 729.
+[41])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 728.
+ [42]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 728.
  (./A wearable fall-detection system for smart cities.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 729.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 729.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 728.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 728.
 Package rerunfilecheck Info: File `"A wearable fall-detection system for smart 
 cities".out' has not changed.
 (rerunfilecheck)             Checksum: 9B665EF2EE4BA952442177B8A410DC7A;964.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 729.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 728.
  ) 
 Here is how much of TeX's memory you used:
- 11078 strings out of 492649
- 150920 string characters out of 6133385
- 275253 words of memory out of 5000000
- 14607 multiletter control sequences out of 15000+600000
- 12554 words of font info for 48 fonts, out of 8000000 for 9000
+ 11182 strings out of 492649
+ 152936 string characters out of 6133385
+ 275615 words of memory out of 5000000
+ 14684 multiletter control sequences out of 15000+600000
+ 12245 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,18n,51p,2378b,2094s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,18n,51p,2379b,2094s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2018/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2018/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmitt10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c
-:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2
-018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmti10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmti7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c
-:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "A wearable fall-detection system for smart cities.pdf" (39 p
-ages, 1799286 bytes).
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><c:/texlive/2018/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:
+/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+t10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on "A wearable fall-detection system for smart cities.pdf" (42 p
+ages, 1805457 bytes).
 PDF statistics:
- 541 PDF objects out of 1000 (max. 8388607)
- 435 compressed objects within 5 object streams
- 154 named destinations out of 1000 (max. 500000)
+ 691 PDF objects out of 1000 (max. 8388607)
+ 582 compressed objects within 6 object streams
+ 182 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
