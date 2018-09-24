@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  21 SEP 2018 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  24 SEP 2018 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -941,94 +941,94 @@ Overfull \hbox (10.62125pt too wide) in alignment at lines 40--40
 <Images/synchronisation1.png, id=448, 1171.37625pt x 705.63625pt>
 File: Images/synchronisation1.png Graphic file (type png)
 <use Images/synchronisation1.png>
-Package pdftex.def Info: Images/synchronisation1.png  used on input line 574.
+Package pdftex.def Info: Images/synchronisation1.png  used on input line 571.
 (pdftex.def)             Requested size: 304.55064pt x 183.46109pt.
  [27pdfTeX warning (ext4): destination with the same identifier (name{figure.11
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.579  \newpage
+l.576  \newpage
                 <./Images/synchronisation1.png>]
 <Images/synchronisation2.png, id=457, 1059.96pt x 619.31375pt>
 File: Images/synchronisation2.png Graphic file (type png)
 <use Images/synchronisation2.png>
-Package pdftex.def Info: Images/synchronisation2.png  used on input line 583.
+Package pdftex.def Info: Images/synchronisation2.png  used on input line 580.
 (pdftex.def)             Requested size: 275.5831pt x 161.01778pt.
  [28pdfTeX warning (ext4): destination with the same identifier (name{table.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.587 \end{itemize}
+l.584 \end{itemize}
                    ]
 <Images/NormalECG1.png, id=463, 1221.81468pt x 703.87968pt>
 File: Images/NormalECG1.png Graphic file (type png)
 <use Images/NormalECG1.png>
-Package pdftex.def Info: Images/NormalECG1.png  used on input line 594.
+Package pdftex.def Info: Images/NormalECG1.png  used on input line 591.
 (pdftex.def)             Requested size: 342.10577pt x 197.08496pt.
  [29pdfTeX warning (ext4): destination with the same identifier (name{figure.12
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.599 
-       <./Images/synchronisation2.png>] [30pdfTeX warning (ext4): destination w
-ith the same identifier (name{figure.13}) has been already used, duplicate igno
-red
+l.597 R
+       egarding the analysis of the acceleration values, it was observed tha...
+ <./Images/synchronisation2.png>] [30pdfTeX warning (ext4): destination with th
+e same identifier (name{figure.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.609 
+l.606 
        <./Images/NormalECG1.png>]
 <images/STAMP_OVERVIEW.png, id=482, 904.37875pt x 574.145pt>
 File: images/STAMP_OVERVIEW.png Graphic file (type png)
 <use images/STAMP_OVERVIEW.png>
-Package pdftex.def Info: images/STAMP_OVERVIEW.png  used on input line 624.
+Package pdftex.def Info: images/STAMP_OVERVIEW.png  used on input line 621.
 (pdftex.def)             Requested size: 325.57611pt x 206.69203pt.
  [31] [32pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.638 T
+l.635 T
        o apply STAMP the following steps must be followed: <./Images/STAMP_OVER
 VIEW.png>] [33]
 <images/STAMP_SynchError.png, id=503, 906.38625pt x 817.0525pt>
 File: images/STAMP_SynchError.png Graphic file (type png)
 <use images/STAMP_SynchError.png>
-Package pdftex.def Info: images/STAMP_SynchError.png  used on input line 649.
+Package pdftex.def Info: images/STAMP_SynchError.png  used on input line 646.
 (pdftex.def)             Requested size: 317.23993pt x 285.97266pt.
 <Images/STAMP2+3level(3).png, id=506, 476.982pt x 632.96475pt>
 File: Images/STAMP2+3level(3).png Graphic file (type png)
 <use Images/STAMP2+3level(3).png>
-Package pdftex.def Info: Images/STAMP2+3level(3).png  used on input line 657.
+Package pdftex.def Info: Images/STAMP2+3level(3).png  used on input line 654.
 (pdftex.def)             Requested size: 257.56644pt x 341.79587pt.
  [34pdfTeX warning (ext4): destination with the same identifier (name{figure.15
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.661 	\newpage
+l.658 	\newpage
                 <./Images/STAMP_SynchError.png>]
 <Images/STAMP4+5level(2).png, id=517, 818.05624pt x 1082.0425pt>
 File: Images/STAMP4+5level(2).png Graphic file (type png)
 <use Images/STAMP4+5level(2).png>
-Package pdftex.def Info: Images/STAMP4+5level(2).png  used on input line 666.
+Package pdftex.def Info: Images/STAMP4+5level(2).png  used on input line 663.
 (pdftex.def)             Requested size: 278.13544pt x 367.88959pt.
  [35pdfTeX warning (ext4): destination with the same identifier (name{figure.16
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.670     \newpage
+l.667     \newpage
                    <./Images/STAMP2+3level(3).png>] [36pdfTeX warning (ext4): d
 estination with the same identifier (name{figure.17}) has been already used, du
 plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.677 		\item
+l.674 		\item
               Second level control structure $\rightarrow$ to avoid data los...
  <./Images/STAMP4+5level(2).png>] [37] [38] [39]
 (./A wearable fall-detection system for smart cities.bbl
@@ -1044,21 +1044,21 @@ cal elec-tri-cal
  []
 
 [42])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 722.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 719.
  [43]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 722.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 719.
  (./A wearable fall-detection system for smart cities.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 722.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 722.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 719.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 719.
 Package rerunfilecheck Info: File `"A wearable fall-detection system for smart 
 cities".out' has not changed.
 (rerunfilecheck)             Checksum: 661847EF9B69AAD5BBF6A127A76A130D;976.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 722.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 719.
  ) 
 Here is how much of TeX's memory you used:
  11956 strings out of 492649
  163819 string characters out of 6133385
- 293841 words of memory out of 5000000
+ 293843 words of memory out of 5000000
  15447 multiletter control sequences out of 15000+600000
  12245 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1079,7 +1079,7 @@ blic/amsfonts/cm/cmti7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmti8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
 Output written on "A wearable fall-detection system for smart cities.pdf" (43 p
-ages, 1807029 bytes).
+ages, 1807425 bytes).
 PDF statistics:
  700 PDF objects out of 1000 (max. 8388607)
  590 compressed objects within 6 object streams

@@ -77,7 +77,7 @@
 \author{Inmaculada Medina-Bulo\fnref{label2}}
 \ead{inmaculada.medina@uca.es}
 \address[label1]{WSN and IOT Research Group Frankfurt University of Applied Sciences, Nibelungenplatz 1, 60318 Frankfurt am Main, Germany}
-\address[label2]{UCASE Software Engineering Research group, University of Cadiz, Av. Universidad de Cadiz, 10, 11519 Puerto Real, Spain}
+\address[label2]{UCASE Software Engineering Research group, University of Cádiz, Av. Universidad de Cádiz, 10, 11519 Puerto Real, Spain}
 
 
 
@@ -212,9 +212,9 @@ The EPL used in our ongoing research is Espertech's EPL \cite{Esper:2016}, which
 	\item It is open-source.
 	\item CEP engine of Espertech processes around 500.000 events per second on a worlstation and between 70.000 and 200.000 events per second on a notebook (according to Espertech) $\rightarrow$ This is an essential feature to simulate time-critical applications. 
 \end{itemize}
-Considering the SQL based syntax of Espertech's EPL \cite{Esper:2016}, an analogy can be applied that represents the way the used EPL works. In comparison to SQL, which is based on tables, EPL works on the continuously incoming data stream. Therefore, a row from a SQL table corresponds to an event in the event stream. 
+Considering the SQL based syntax of Espertech's EPL \cite{Esper:2016}, an analogy can be applied that represents the way the EPL is used. In comparison to SQL, which is based on tables, EPL works on the continuously incoming data stream. Therefore, a row from a SQL table corresponds to an event in the event stream. 
 
-To define rules in CEP the incoming event should be defined, that means you need to specify incoming data for the CEP-engine. After the event creation, rules should be defined to categorize	the incoming input in fall-events or daily activity.
+To define rules in CEP the incoming event should be characterized in detail to specify incoming data for the CEP-engine. After the event creation, rules should be determined to categorize the incoming input in fall-events or daily activity.
  \renewcommand{\lstlistingname}{Example}
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,language=SQL,caption=Fall pattern based on Kozina et al. \cite{Kozina},label=CEPPattern]
 //1. Definition of the event - defines incoming data for CEP
@@ -241,7 +241,7 @@ The illustrated EPL query (see Example \ref{CEPPattern}) is based on the physica
 	\item a1.accelS2 $\rightarrow$ initial acceleration value of sensor node 2.
 	\item a2.accelS2 $\rightarrow$ successive acceleration value of sensor node 2.
 \end{itemize}
-Referring to the selected properties this example checks, if the initial acceleration of node 1 (a1.accelS1) is $<= 9.81$ m/$s^2$ which indicate that the person is in a stationary position in which the earth's gravity of 1g (9.81 m/$s^2$) acts on the body. Subsequently, it will be checked if the subtraction of the successive acceleration (a2.accelS1) and the first acceleration (a1.accelS1)  within a time of 1 second is $>=$ $<= 9.81$ m/$s^2$. If this condition is fulfilled, it is an indication that the person has suffered an impact to the ground. Adding the OR disjunction the second sensor node can be integrated and the statement is able to detect a fall in case one of the nodes matches the EPL query and the values of the acceleration correspond to the same person.
+Referring to the selected properties this example checks, if the initial acceleration of node 1 (a1.accelS1) is $<= 9.81$ m/$s^2$ which indicate that the person is in a stationary position in which the earth's gravity of 1g (9.81 m/$s^2$) acts on the body. Subsequently, it will be checked if the subtraction of the successive acceleration (a2.accelS1) and the first acceleration (a1.accelS1)  within a time of 1 second is $>=$ $<= 9.81$ m/$s^2$. If this condition is fulfilled, it is an indication that the person has suffered an impact to the ground. Adding the OR disjunction the second sensor node can be integrated and the statement is able to detect a fall in case one of the node's data matches the EPL query and the values of the acceleration correspond to the same person.
 \subsection{IoT test event generator}
 \label{iotteg}
 
@@ -301,7 +301,7 @@ property that is evaluated in the Example~\ref{eventTypeDef} queries is
 
 Apart from the mentioned challenges that IoT-TEG solves in order to test 
 event-processing programs, it incorporates a specific functionality
-for testing programs than use EPL of EsperTech. This functionality helps to 
+for testing programs that use the EPL of EsperTech. This functionality helps to 
 automatically generate events with specific values in accordance with the 
 program which will process them. IoT-TEG analyses the Esper EPL queries and 
 generates events depending on the logical and relational operations. 
@@ -551,13 +551,10 @@ After testing the used fall detection prototype, some problems were
 found. Moreover, some considerations will be applied in future tests.
 
 First of all, we are going to explain the problems related to the prototype; problems related to its hardware and
-software. Talking about the software, the synchronization in the prototype is an issue; we have founded the following problems:
+software. Talking about the software, the synchronization in the prototype is an issue; we have found the following problems:
 
 \begin{itemize}
- \item In one hand, the falls from the beginning always should be discarded because the sensors are 
- sending a lot of data. The Table~\ref{tabla:Synchro} will be used to explain the problem. Let us say 
- that in ``fall 1'', there are more than 30 values that define the fall, and later in ``fall 3'', there are 12 values that define the fall. So, in order to analyze the falls and compare the acceleration behavior, it is difficult to work with that information. A comparison of two FAW falls with the synchronization problem is shown
- in Figure~\ref{fig:synchronisation1}; the sensor 1 acceleration values for the first FAW fall are colored in blue and the sensor 1 acceleration values for the second FAW fall are colored in red. The first fall is one fall from the beginning of the simulation, and the second one is from the middle of the simulation.
+ \item The falls from the beginning always should be discarded because the sensors are sending a lot of data. The Table~\ref{tabla:Synchro} will be used to explain the problem. Let us assume that in ``fall 1'', there are more than 30 values that define the fall, and later in ``fall 3'', there are 12 values that define the fall. In order to analyze the falls and compare the acceleration behavior, it is difficult to work with that discrepancy. A comparison of two FAW falls with the synchronization problem is shown in Figure~\ref{fig:synchronisation1}; the sensor 1 acceleration values for the first FAW fall are colored in blue and the sensor 1 acceleration values for the second FAW fall are colored in red. The first fall is one fall from the beginning of the simulation, and the second one is from the middle of the simulation.
  
  \begin{table}[!ht]
  \centering
@@ -577,7 +574,7 @@ software. Talking about the software, the synchronization in the prototype is an
  \end{figure}
  The acceleration values show that in less than 250 milliseconds there are more than 30 values from ``fall 1'', and in more than 350 milliseconds there are 12 values from ``fall 2''. There is a lack of synchronization not only in the amount of data, but also in the time. 
  \newpage
- \item On the other hand, some sensors transmit more data than the others; no matter the fall, the sensors are not sending the same amount of data, even sometimes there is no data. The four sensors were working while the FAW fall-simulation, but the obtained acceleration values were from three of them, one of the sensor does not transmit data in one moment of the simulation, see Figure~\ref{fig:synchronisation2}. 
+ \item Some sensors transmit more data than the others; no matter the fall, the sensors are not sending the same amount of data, even sometimes there is no data. The four sensors were working during the FAW fall test, but the obtained acceleration values were from three of them, one of the sensors did not transmit data in one period of the test, see Figure~\ref{fig:synchronisation2}. 
  \begin{figure}[!ht]
   \centering
   \includegraphics[scale=0.26]{Images/synchronisation2.png}
@@ -595,7 +592,7 @@ If we consider the used ECG-sensor architecture, we encountered differences in s
 	\caption[Measured ECG-signal]{Baseline shifting ECG-signal}
 	\label{fig:ECGBaselineShifting}
 \end{figure}
-Baseline wander (BW) disturbances are caused by variations in electrode-skin impedance, patient's movement and breathing during the ECG-measurements. Muscle contraction is common for people which suffer from tremor or fearing the ECG-measurement and for disabled people. The certified medical devices have an integrated filter which can be applied to smooth the signal \cite{ECGNoise,DrNicoletteWagner}. To solve this problem the application of a low \& high pass filter in our setup is considered.
+Baseline wander (BW) disturbances are caused by variations in electrode-skin impedance, patient's movement and breathing during the ECG-measurements. Muscle contraction is common for people which suffer from tremor or fearing the ECG-measurement and for disabled people. Certified clinical devices have an integrated filter which can be applied to smooth the signal \cite{ECGNoise,DrNicoletteWagner}. To solve this problem the application of a low \& high pass filter in our setup is considered.
 
 Regarding the analysis of the acceleration values, it was observed that some values could lead to misinterpretation. The reason was that the test persons quickly got up after the fall simulation instead of lying on the ground.
 Since not only the measured values but also the video recordings of the fall simulations were analyzed for a profound analysis, the problem could be determined. In order to ensure a better simulation, the test subjects will lie on the ground for at least 2 seconds after simulating a fall. In a real situation, if a person falls and is able to stands up quickly it means that the person is conscious and able to move. On the contrary, if the person falls and does not get up after a while, it means that the person may be unconscious or unable to make the emergency call.  Therefore, waiting at least 2 seconds in our test scenarios is helpful to perform an accurate fall analysis.

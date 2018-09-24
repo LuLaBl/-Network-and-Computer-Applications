@@ -10,20 +10,20 @@ Warning--empty booktitle in ECGNoise
 You've used 25 entries,
             2937 wiz_defined-function locations,
             840 strings with 10936 characters,
-and the built_in function-call counts, 7349 in all, are:
+and the built_in function-call counts, 7347 in all, are:
 = -- 692
 > -- 227
 < -- 9
 + -- 92
 - -- 67
 * -- 454
-:= -- 967
+:= -- 969
 add.period$ -- 33
 call.type$ -- 25
-change.case$ -- 27
+change.case$ -- 26
 chr.to.int$ -- 0
 cite$ -- 29
-duplicate$ -- 256
+duplicate$ -- 255
 empty$ -- 857
 format.name$ -- 83
 if$ -- 1957
@@ -32,14 +32,14 @@ int.to.str$ -- 25
 missing$ -- 19
 newline$ -- 92
 num.names$ -- 27
-pop$ -- 192
+pop$ -- 191
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 547
 stack$ -- 0
-substring$ -- 269
-swap$ -- 79
+substring$ -- 267
+swap$ -- 80
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
