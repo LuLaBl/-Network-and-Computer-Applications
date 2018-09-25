@@ -4,7 +4,7 @@ The top-level auxiliary file: A wearable fall-detection system for smart cities.
 The style file: elsarticle-num.bst
 Database file #1: mybibfile.bib
 Warning--I'm ignoring Antonicelli-ECG's extra "note" field
---line 481 of file mybibfile.bib
+--line 479 of file mybibfile.bib
 Warning--empty year in Gutierrez2017
 Warning--empty year in TesisGutierrez2017
 Warning--empty year in Igual2013
@@ -21,36 +21,36 @@ Warning--empty booktitle in ECGNoise
 Warning--empty year in STAMPThesis
 You've used 25 entries,
             2937 wiz_defined-function locations,
-            843 strings with 10919 characters,
-and the built_in function-call counts, 7663 in all, are:
-= -- 744
+            842 strings with 10977 characters,
+and the built_in function-call counts, 7643 in all, are:
+= -- 742
 > -- 227
 < -- 9
 + -- 92
 - -- 67
-* -- 489
-:= -- 983
+* -- 488
+:= -- 986
 add.period$ -- 34
 call.type$ -- 25
-change.case$ -- 39
+change.case$ -- 38
 chr.to.int$ -- 0
 cite$ -- 39
-duplicate$ -- 271
-empty$ -- 880
+duplicate$ -- 269
+empty$ -- 874
 format.name$ -- 83
-if$ -- 2029
+if$ -- 2022
 int.to.chr$ -- 0
 int.to.str$ -- 25
-missing$ -- 18
+missing$ -- 19
 newline$ -- 93
 num.names$ -- 27
-pop$ -- 193
+pop$ -- 189
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 563
+skip$ -- 564
 stack$ -- 0
-substring$ -- 318
+substring$ -- 316
 swap$ -- 70
 text.length$ -- 9
 text.prefix$ -- 0
