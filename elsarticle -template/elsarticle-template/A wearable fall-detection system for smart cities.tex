@@ -115,7 +115,7 @@ To counteract these life-threatening events fast assistance is necessary due to 
 	\caption[Escalation scheme]{Escalation scheme simulation~\cite{LaBlunda.2016,LaBlunda.2016b}}
 	\label{fig:escalationscheme}
 \end{figure}
-A prototype in form of a belt was developed which includes an electrocardiogram (ECG) - harness and is based on a five sensor nodes Body Area Network (BAN). Each sensor node of the belt acquires continuously acceleration data including time stamp and the sensor node of the ECG-harness provides the analog value of the voltage including time stamp. In case of a fall the system should be capable to autonomously call the emergency services. Applying sensor fusion of physical and medical sensors we expect to improve the reliability of fall-detection and possibly fall-prevention. Another expectation is that the integration of medical sensors may facilitate the classification of different fall-types. Detecting and classifying falls are critical in situations that may lead to loss of life if detected incorrectly. The BAN is generating a large amount of data in real time. Therefore data analysis technologies have to be used. CEP \cite{Esper:2016} is a data analysis technology which   To detect and classify fall-events the obtained data from our proposed fall-detection prototype is used to define event patterns and rules based on Espertech's EPL \cite{Esper:2016}. In literature, several types of falls are described and it is important to recognize all these falls. To generate the test events, the IoT-TEG tool is used which is capable to adapt the test events according to the type of fall.
+A prototype in form of a belt was developed which includes an electrocardiogram (ECG) - harness and is based on a five sensor nodes Body Area Network (BAN). Each sensor node of the belt acquires continuously acceleration data including time stamp and the sensor node of the ECG-harness provides the analog value of the voltage including time stamp. In case of a fall the system should be capable to autonomously call the emergency services. Applying sensor fusion of physical and medical sensors we expect to improve the reliability of fall-detection and possibly fall-prevention. Another expectation is that the integration of medical sensors may facilitate the classification of different fall-types. Detecting and classifying falls are critical in situations that may lead to loss of life if detected incorrectly. The BAN is generating a large amount of data in real time. Therefore data analysis technologies have to be used. CEP \cite{Esper:2016} is a data analysis technology which is linked to the event-driven architecture and is used to manage and monitor in real time a huge volume of information that arrives in form of events with the lowest latency time. The CEP technology requires the usage of special software, the CEP-engine. Each CEP technology provides a language called Event Process Languages (EPL). The EPL is used to define the event patterns which are used to detect the relevant situations, in our case these correspond to the detection of fall-events. There are imperatives, rule-oriented and stream-oriented EPL types. For our research a stream-oriented EPL is used which will be introduced in subsection \ref{subsec:CEP}.  In literature, several types of falls are described and it is important to recognize all these falls. Since testing the system plays an essential role in verifying the reliability of our fall-detection prototype by simulating all possible fall-events, the IoT-TEG tool \cite{Gutierrez2017,TesisGutierrez2017} is used. IoT-TEG \cite{Gutierrez2017,TesisGutierrez2017} is capable to automatically generate test events which are adapted to different types of falls.
 In terms of smart cities our expectancy is to significantly provide an important e-health service for smart cities which is an essential life-saver for the population. With reference to the development of a reliable fall-detection solution and the above mentioned expectations our ongoing research will be confronted with the following questions:
 \begin{itemize}
 	\item Will the integration of medical sensors improve the reliability of the fall detection system?
@@ -273,7 +273,7 @@ and it can solve the main challenges developers face when they test event-proces
 \end{enumerate}
 
 For the sake of clarity, Example~\ref{eventTypeDef} shows an event type
-definition.
+definition. \newpage
 
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,language=XML,caption=Event type definition example,label=eventTypeDef]
 <?xml version="1.0" encoding="UTF-8"?>
@@ -301,7 +301,7 @@ property that is evaluated in the Example~\ref{eventTypeDef} queries is
 
 Apart from the mentioned challenges that IoT-TEG solves in order to test 
 event-processing programs, it incorporates a specific functionality
-for testing programs that use the EPL of EsperTech. This functionality helps to 
+for testing programs that use the EPL of EsperTech \cite{Esper:2016}. This functionality helps to 
 automatically generate events with specific values in accordance with the 
 program which will process them. IoT-TEG analyses the Esper EPL queries and 
 generates events depending on the logical and relational operations. 
@@ -311,7 +311,7 @@ generates events depending on the logical and relational operations.
 
 \subsection{Architecture}
 \label{subsec:Architecture}	
-The hardware architecture plays an important role in the development process to ensure the reliable functioning of the system. A first prototype was developed in this ongoing research which is introduced in \cite{LaBlunda.2016, LaBlunda.2016b}. This paper presents an improved version of the prototype in \cite{LaBlunda.2016, LaBlunda.2016b}, which includes essential developments that contribute to reliable operation of the system. Additionally, the improved hardware design meets the requirement for patient compliance. This aspect should be taken into consideration to provide a user friendly design which facilitates the freedom of movement for the user. As a safety critical system for medical purposes, a redundant hardware design should be provided to protect the system against a total system failure which would have severe consequences for the user in case of fall-events. Referring to J{\"a}ms{\"a} et al. \cite{jamsa2014fall} the best approach is to position the accelerometer near to the waist. Taking into consideration these aspects a wearable belt solution was developed which is based on a four sensor nodes BAN (see Figure \ref{fig:BanBelt}). The four sensor nodes (S1 - S4) positioned on the belt are acting as peripherals and are continuously acquiring acceleration data which is sent via Bluetooth Low Energy (BLE) to the smart phone (central device). \newpage
+The hardware architecture plays an important role in the development process to ensure the reliable functioning of the system. A first prototype was developed in this ongoing research which is introduced in \cite{LaBlunda.2016, LaBlunda.2016b}. This paper presents an improved version of the prototype in \cite{LaBlunda.2016, LaBlunda.2016b}, which includes essential developments that contribute to reliable operation of the system. Additionally, the improved hardware design meets the requirement for patient compliance. This aspect should be taken into consideration to provide a user friendly design which facilitates the freedom of movement for the user. As a safety critical system for medical purposes, a redundant hardware design should be provided to protect the system against a total system failure which would have severe consequences for the user in case of fall-events. Referring to J{\"a}ms{\"a} et al. \cite{jamsa2014fall} the best approach is to position the accelerometer near to the waist. Taking into consideration these aspects a wearable belt solution was developed which is based on a four sensor nodes BAN (see Figure \ref{fig:BanBelt}). The four sensor nodes (S1 - S4) positioned on the belt are acting as peripherals and are continuously acquiring acceleration data which is sent via Bluetooth Low Energy (BLE) to the smart phone (central device). 
 
 \begin{figure}[!ht]
 	\centering
@@ -334,7 +334,7 @@ The central device receives the incoming sensor data which will be stored in sep
 The belt solution reflects the above criteria of a safety-critical systems. The proposed architecture (see Figure \ref{fig:BanBelt}) is based on a mirroring principle of the opposite sensor nodes which provide identical acceleration values, only with different signs. If a sensor node fails during operation, the opposite node can be used as a reference to ensure accurate evaluation of the event.  Considering the following scheme (see Figure \ref{fig:ReferenceScheme}) this fall-detection belt solution facilitates the recognition of different fall-event types. The positioning of the nodes around the hip allows a precise fall-characterization.
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.32]{images/axis}
+	\includegraphics[scale=0.31]{images/axis}
 	\caption[Three axis reference scheme]{Three axis reference scheme \cite{LaBlunda.2016,LuigiMasterThesis}}
 	\label{fig:ReferenceScheme}
 \end{figure}
@@ -387,7 +387,7 @@ The first and fourth columns of the Table~\ref{tabla:FAW} represent the seconds 
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.26]{Images/TwoFallsComparative.png}
+	\includegraphics[scale=0.25]{Images/TwoFallsComparative.png}
 	\caption[Acceleration during FAW fall]{Acceleration comparison during FAW fall.}
 	\label{fig:FAWcomparison}
 \end{figure}
@@ -516,7 +516,7 @@ It is needed to highlight that to obtain these rules to define the behaviour of 
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.26]{Images/IoTTEGFAWGeneratedEvents}
+	\includegraphics[scale=0.25]{Images/IoTTEGFAWGeneratedEvents}
 	\caption[IoT-TEG generated FAW falls]{IoT-TEG generated FAW falls.}
 	\label{fig:IoTTEGFAWGeneratedEvents}
 \end{figure}
@@ -530,6 +530,7 @@ Analyzing the literature regarding fall detection, it was pointed out that the e
 	\caption[ECG - BAN]{ECG - BAN}
 	\label{fig:ECGBAN}
 \end{figure}
+
 The updated BAN includes four sensor nodes placed on the belt (S1 - S4) and an additional node on the chest (S5). These five nodes are acting as peripherals and they are continuously providing sensor data to the smart phone (central) via BLE. The sensor nodes S1 to S4 send the acceleration data and the ECG-sensor sends analog values (representation of ECG-signal) to the central device. Fusing these information the central device analyzes the events for possible fall-events.
 
 Before the ECG-sensor can be fully integrated into the prototype, some tasks had be solved. The first task to solve is a continuous recording of the ECG during the person's daily activities. When the ECG-electrodes lose contact with the skin surface because of movement, this leads to increased noise in the signal. Therefore, a solution for reliable ECG-recording have to be developed. The second task is to perform a validation of the ECG-sensor. For this purpose, the own ECG-measurements must be compared with measurements taken by a medically certified clinical ECG-device, in order to guarantee the correctness of the ECG-values. Based on Gjoreski et al. \cite{Gjoreski2014} the ECG-signal is relevant to detect fall-events as mentioned in section \ref{sec:relatedwork}. Based on this, another task will be the determination of ECG-patterns that provide relevant information for fall events.
@@ -541,7 +542,7 @@ The first test measurements with the ECG-sensor confirmed the noisy and unstable
 	\caption[ECG - Harness]{ECG - Harness}
 	\label{fig:ECGHarness}
 \end{figure}
-\newpage
+
 After completing the development of the ECG-harness the measurements were repeated using the harness solution. A more stable signal resulted, especially during walking and the sitting procedure the stability of the ECG-signal was improved significantly. The artifacts in an ECG-signal which result during motion may be used as a recognition pattern for fall-events. After the positive results regarding the improvements of the signal's stability, validation tests were conducted in a medical lab with the assistance of a physician. In clinical settings ECG-devices with 10 electrodes are being used but for wearable or emergency purposes (e.g. ambulance) a 3-Channel ECG-device is recommended because it provides less wiring and satisfies the aspect of patient compliance \cite{DrNicoletteWagner}. According to a study by Antonicelli et al. \cite{Antonicelli-ECG}, the use of a 3-lead ECG may be essential to avoid delayed treatment of specific heart diseases, such as elderly people who suffer from chronic heart disease and need continuous ECG monitoring. In addition, the analysis in \cite{Antonicelli-ECG} led to the result that a 3-lead ECG provides qualitatively similar evaluation as a 12-lead ECG. Comparing the measurements taken in the medical lab with the ECG-measurements provided by our ECG-sensor the correct functionality of our sensor could be confirmed. Based on this state of knowledge, ECG-measurements are performed during the fall simulations based on \cite{Li2009} and \cite{Pannurat2014} as part of the master thesis \cite{FatimaMasterThesis} in progress. The aim of this work is to evaluate the ECG-patterns for essential artifacts during the fall and to apply machine learning methods to improve the system's ability to detect fall-events and, if possible, predict fall-events with the additional information of the ECG-sensor. A machine learning analysis is also planned in future. 
 
 \subsection{Detected problems}
@@ -554,7 +555,7 @@ First of all, we are going to explain the problems related to the prototype; pro
 software. Talking about the software, the synchronization in the prototype is an issue; we have found the following problems:
 
 \begin{itemize}
- \item The falls from the beginning always should be discarded because the sensors are sending a lot of data. The Table~\ref{tabla:Synchro} will be used to explain the problem. Let us assume that in ``fall 1'', there are more than 30 values that define the fall, and later in ``fall 3'', there are 12 values that define the fall. In order to analyze the falls and compare the acceleration behavior, it is difficult to work with that discrepancy. A comparison of two FAW falls with the synchronization problem is shown in Figure~\ref{fig:synchronisation1}; the sensor 1 acceleration values for the first FAW fall are colored in blue and the sensor 1 acceleration values for the second FAW fall are colored in red. The first fall is one fall from the beginning of the simulation, and the second one is from the middle of the simulation.
+ \item The falls from the beginning always should be discarded because the sensors are sending a lot of data. The Table~\ref{tabla:Synchro} will be used to explain the problem. Let us assume that in ``fall 1'', there are more than 30 values that define the fall, and later in ``fall 3'', there are 12 values that define the fall. In order to analyze the falls and compare the acceleration behavior, it is difficult to work with that discrepancy. A comparison of two FAW falls with the synchronization problem is shown in Figure~\ref{fig:synchronisation1}; the sensor 1 acceleration values for the first FAW fall are colored in blue and the sensor 1 acceleration values for the second FAW fall are colored in red. The first fall is one fall from the beginning of the simulation, and the second one is from the middle of the simulation. \newpage
  
  \begin{table}[!ht]
  \centering
@@ -568,12 +569,12 @@ software. Talking about the software, the synchronization in the prototype is an
  
  \begin{figure}[!ht]
   \centering
-  \includegraphics[scale=0.26]{Images/synchronisation1.png}
+  \includegraphics[scale=0.25]{Images/synchronisation1.png}
   \caption[Comparison acceleration during two FAW falls]{Synchronization problem; comparison of acceleration values during two FAW falls}
   \label{fig:synchronisation1}
  \end{figure}
  The acceleration values show that in less than 250 milliseconds there are more than 30 values from ``fall 1'', and in more than 350 milliseconds there are 12 values from ``fall 2''. There is a lack of synchronization not only in the amount of data, but also in the time. 
- \newpage
+
  \item Some sensors transmit more data than the others; no matter the fall, the sensors are not sending the same amount of data, even sometimes there is no data. The four sensors were working during the FAW fall test, but the obtained acceleration values were from three of them, one of the sensors did not transmit data in one period of the test, see Figure~\ref{fig:synchronisation2}. 
  \begin{figure}[!ht]
   \centering
@@ -585,14 +586,14 @@ software. Talking about the software, the synchronization in the prototype is an
 
 Concerning the hardware of the prototype, there are some aspects that need to be improved. One point is the durability of the battery, which is 2 to 3 weeks depending on the use. If we want to use this system in everyday life, we have to make sure that the battery life is extended. If we are thinking about elderly people who live alone or employees who work in hazardous working conditions, we have to ensure a permanent monitoring of the parameters in order to provide quick intervention in life-threatening situations.
 
-If we consider the used ECG-sensor architecture, we encountered differences in signal quality that includes noise and baseline shifting (see Figure \ref{fig:ECGBaselineShifting}). The reasons for these distinctions in signal quality were explained by the supervising physician. 
+If we consider the used ECG-sensor architecture, we encountered differences in signal quality that includes noise and baseline shifting (see Figure \ref{fig:ECGBaselineShifting}). The reasons for these distinctions in signal quality were explained by the supervising physician. Baseline wander (BW) disturbances are caused by variations in electrode-skin impedance, patient's movement and breathing during the ECG-measurements.
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale=0.28]{Images/NormalECG1.png}
+	\includegraphics[scale=0.27]{Images/NormalECG1.png}
 	\caption[Measured ECG-signal]{Baseline shifting ECG-signal}
 	\label{fig:ECGBaselineShifting}
 \end{figure}
-Baseline wander (BW) disturbances are caused by variations in electrode-skin impedance, patient's movement and breathing during the ECG-measurements. Muscle contraction is common for people which suffer from tremor or fearing the ECG-measurement and for disabled people. Certified clinical devices have an integrated filter which can be applied to smooth the signal \cite{ECGNoise,DrNicoletteWagner}. To solve this problem the application of a low \& high pass filter in our setup is considered.
+ Muscle contraction is common for people which suffer from tremor or fearing the ECG-measurement and for disabled people. Certified clinical devices have an integrated filter which can be applied to smooth the signal \cite{ECGNoise,DrNicoletteWagner}. To solve this problem the application of a low \& high pass filter in our setup is considered.
 
 Regarding the analysis of the acceleration values, it was observed that some values could lead to misinterpretation. The reason was that the test persons quickly got up after the fall simulation instead of lying on the ground.
 Since not only the measured values but also the video recordings of the fall simulations were analyzed for a profound analysis, the problem could be determined. In order to ensure a better simulation, the test subjects will lie on the ground for at least 2 seconds after simulating a fall. In a real situation, if a person falls and is able to stands up quickly it means that the person is conscious and able to move. On the contrary, if the person falls and does not get up after a while, it means that the person may be unconscious or unable to make the emergency call.  Therefore, waiting at least 2 seconds in our test scenarios is helpful to perform an accurate fall analysis.
@@ -640,31 +641,31 @@ To apply STAMP the following steps must be followed:
 	\item \textbf{Definition of safety requirements \& constraints:} The safety requirements and constraints are based on the hazard which causes the accident. Safety constraints are used to describe non-permissible system operations in order to ensure safe operating conditions. A top level safety requirement is the real-time detection of fall-events. The timestamps of all four nodes must be synchronized. If constraints are violated system migrates to unsafe or hazardous state.
 	\item \textbf{Definition of safety control structure:}
 	A high-level safety control structure should be defined which contains the system's components and the process which should be controlled.The control structure below (see Figure. \ref{fig:STAMPLevel1}) depicts the control loop of the controlled process, the movement of the person.
-	The sensors provide sensor data to the controller (smartphone). The smartphone contains a data acquisition algorithm to collect the incoming data and a fall-detection algorithm to analyze this data. If the event corresponds to a fall, the alert system on the mobile device will call the emergency services for intervention. The actuator part of the system contains the control of the data acquisition process, i.e. timers, sleep mode etc. \newpage
+	The sensors provide sensor data to the controller (smartphone). The smartphone contains a data acquisition algorithm to collect the incoming data and a fall-detection algorithm to analyze this data. If the event corresponds to a fall, the alert system on the mobile device will call the emergency services for intervention. The actuator part of the system contains the control of the data acquisition process, i.e. timers, sleep mode etc.
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[scale=0.35]{images/STAMP_SynchError}
+		\includegraphics[scale=0.36]{images/STAMP_SynchError}
 		\caption[System Safety Control Structure]{System Safety Control Structure - Hierarchy level 1) $\rightarrow$ Black label (system components), \textcolor{blue}{blue label (description of system components)}, \textcolor{red}{red label (possible hazards)}}
 		\label{fig:STAMPLevel1}
 	\end{figure}
-
+	\newpage
 	The lower level control loops (see Figures \ref{fig:STAMPLevel2+3} and \ref{fig:STAMPLevel4+5}) illustrate a detailed internal control structure of the controlled processes. These processes are interacting as a controller in the lower level structures. Taking into consideration the second level safety control loop, the movement process control (controller) receives the sensor data. Based on the data a control command will be executed to control the BAN which sends a feedback to the movement process controller. The third level control loop zooms into the BAN control, which is the master (controller) that actuates the wake up procedure of the sensor nodes to control the nodes. These will deliver sensor data, including the time to the BAN control.
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[scale=0.54]{Images/STAMP2+3level(3)}
+		\includegraphics[scale=0.53]{Images/STAMP2+3level(3)}
 		\caption[Safety Control Structure - Hierarchy level 2 \& 3]{Safety Control Structure - Hierarchy level 2 \& 3}
 		\label{fig:STAMPLevel2+3}
 	\end{figure} 
-	\newpage
+
  	To provide a more detailed hazard analysis two more control loop layers were created which are illustrated in the successive illustration (see Figure  \ref{fig:STAMPLevel4+5}). The fourth level of the system's control structure zooms into Sensor node control (controlled process in Figure \ref{fig:STAMPLevel2+3}) which is the control unit (controller). Considering this control layer the controller receives the sensor's services and characteristics which are provided via BLE and contain the sensor values. The sensor node control initiates a scanning command (actuator) to detect the sensor properties which are provided by the BLE interface (controlled process: Bluetooth sensor detection control).  
 	
 	\begin{figure}[!ht]
 		\centering
-		\includegraphics[scale=0.34]{Images/STAMP4+5level(2)}
+		\includegraphics[scale=0.325]{Images/STAMP4+5level(2)}
 		\caption[Safety Control Structure - Hierarchy level 4 \& 5]{Safety Control Structure - Hierarchy level 4 \& 5}
 		\label{fig:STAMPLevel4+5}
 	\end{figure}
-    \newpage
+    
     
 	Taking into consideration the fifth level of the control loop which is depicted in Figure \ref{fig:STAMPLevel4+5} an accurate view of the controlled process Bluetooth sensor detection control in level 4 is provided. The master Bluetooth sensor detection control (controller) actuates a connection command via BLE (actuator) to establish a connection to the sensors (controlled process: Bluetooth connection control) which sends a list of available sensor's services and characteristics to the controller. 
 	

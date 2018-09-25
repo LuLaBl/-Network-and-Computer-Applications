@@ -26,10 +26,11 @@ EsperTech, Espertech website, \url{http://www.espertech.com/esper/index.php},
   {L}ast access: 08-08-2018.
 
 \bibitem{Gutierrez2017}
-L.~Gutiérrez-Madroñal, I.~Medina-Bulo, J.~Domínguez-Jiménez, Iot–teg:
-  Test event generator system, Journal of Systems and Software\href
-  {http://dx.doi.org/https://doi.org/10.1016/j.jss.2017.06.037}
-  {\path{doi:https://doi.org/10.1016/j.jss.2017.06.037}}.
+L.~Guti{\'e}rrez-Madro{\~n}al, I.~Medina-Bulo, J.~J.
+  Dom{\'\i}nguez-Jim{\'e}nez, {IoT--TEG: Test event generator system}, Journal
+  of Systems and Software 137  784--803, 2018.
+\newblock \href {http://dx.doi.org/10.1016/j.jss.2017.06.037}
+  {\path{doi:10.1016/j.jss.2017.06.037}}.
 
 \bibitem{TesisGutierrez2017}
 L.~Gutiérrez-Madroñal, {Generación Automática de Casos en Procesamiento de
@@ -42,7 +43,7 @@ N.~Leveson, Engineering a safer world: Systems thinking applied to safety, MIT
 
 \bibitem{Igual2013}
 R.~Igual, C.~Medrano, I.~Plaza, Challenges, issues and trends in fall detection
-  systems, Biomedical engineering online 12 (2013) 66.
+  systems, BioMedical Engineering OnLine 12~(1)  66, 2013.
 \newblock \href {http://dx.doi.org/10.1186/1475-925X-12-66}
   {\path{doi:10.1186/1475-925X-12-66}}.
 
@@ -55,8 +56,8 @@ Q.~Li, J.~A. Stankovic, M.~A. Hanson, A.~T. Barth, J.~Lach, G.~Zhou, Accurate,
   {\path{doi:10.1109/BSN.2009.46}}.
 
 \bibitem{colladomachine}
-A.~Collado-Villaverde, M.~D. R-Moreno, D.~F. Barrero, D.~Rodriguez, Machine
-  learning approach to detect falls on elderly people using sound, in:
+A.~Collado-Villaverde, M.~D. R-Moreno, D.~F. Barrero, D.~Rodriguez, {{Machine
+  Learning Approach to Detect Falls on Elderly People Using Sound}}, in:
   S.~Benferhat, K.~Tabia, M.~Ali (Eds.), Advances in Artificial Intelligence:
   From Theory to Practice, Springer International Publishing, Cham, 2017, pp.
   149--159.
@@ -74,29 +75,29 @@ M.~L{\"u}der, G.~Bieber, R.~Salomon, Sturzerkennung mittels {L}uftdruck- und
 H.~Gjoreski, A.~Rashkovska, S.~Kozina, M.~Lustrek, M.~Gams, Telehealth using
   ecg sensor and accelerometer, in: 2014 37th International Convention on
   Information and Communication Technology, Electronics and Microelectronics
-  (MIPRO), IEEE, 2014, pp. 270--274.
+  (MIPRO), IEEE, pp. 270--274, 2014.
 \newblock \href {http://dx.doi.org/10.1109/MIPRO.2014.6859575}
   {\path{doi:10.1109/MIPRO.2014.6859575}}.
 
 \bibitem{Kozina}
-S.~Kozina, H.~Gjoreski, M.~Gams, M.~Lu{\v{s}}trek, Efficient activity
-  recognition and fall detection using accelerometers, in: International
+S.~Kozina, H.~Gjoreski, M.~Gams, M.~Lu{\v{s}}trek, {Efficient Activity
+  Recognition and Fall Detection Using Accelerometers}, in: International
   Competition on Evaluating AAL Systems through Competitive Benchmarking, Vol.
-  386, Springer, pp. 13--23.
+  386, Springer, pp. 13--23, 2013.
 \newblock \href {http://dx.doi.org/10.1007/978-3-642-41043-7\_2}
   {\path{doi:10.1007/978-3-642-41043-7\_2}}.
 
 \bibitem{Pannurat2014}
 N.~Pannurat, S.~Thiemjarus, E.~Nantajeewarawat, Automatic fall monitoring: A
-  review, Sensors 14~(7) (2014) 12900--12936.
+  review, Sensors 14~(7)  12900--12936, 2014.
 \newblock \href {http://dx.doi.org/10.3390/s140712900}
   {\path{doi:10.3390/s140712900}}.
 
 \bibitem{gutierrez2018}
 L.~Guti{\'e}rrez-Madro{\~n}al, A.~Garc{\'i}a-Dom{\'i}nguez, I.~Medina-Bulo,
-  \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/spe.2629}{Evolutionary
-  mutation testing for iot with recorded and generated events}, Software:
-  Practice and Experience 0~(0).
+  \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/spe.2629}{{Evolutionary
+  mutation testing for IoT with recorded and generated events}}, Software:
+  Practice and Experience 0~(0), 2018.
 \newblock \href
   {http://arxiv.org/abs/https://onlinelibrary.wiley.com/doi/pdf/10.1002/spe.2629}
   {\path{arXiv:https://onlinelibrary.wiley.com/doi/pdf/10.1002/spe.2629}},
@@ -105,37 +106,37 @@ L.~Guti{\'e}rrez-Madro{\~n}al, A.~Garc{\'i}a-Dom{\'i}nguez, I.~Medina-Bulo,
 
 \bibitem{jia2011}
 Y.~Jia, M.~Harman, An analysis and survey of the development of mutation
-  testing, IEEE Transactions on Software Engineering 37~(5) (2011) 649--678.
+  testing, IEEE Transactions on Software Engineering 37~(5)  649--678, 2011.
 
 \bibitem{jamsa2014fall}
 T.~J{\"a}ms{\"a}, M.~Kangas, I.~Vikman, L.~Nyberg, R.~Korpelainen, Fall
   detection in the older people: From laboratory to real-life, Proceedings of
-  the Estonian Academy of Sciences 63~(3) (2014) 253.
+  the Estonian Academy of Sciences 63~(3)  253, 2014.
 
 \bibitem{LuigiMasterThesis}
 L.~{La Blunda}, {Die Sturzerkennung basierend auf Body Area Networks}, Master's
-  thesis, Frankfurt Univeristy of Applied Sciences - Germany (2016).
+  thesis, Frankfurt Univeristy of Applied Sciences - Germany, 2016.
 
 \bibitem{FallRepo}
 L.~Gutiérrez-Madroñal, Github repository,
-  \url{https://github.com/lorgut/FallDetectionData} (2018).
+  \url{https://github.com/lorgut/FallDetectionData}, 2018.
 
 \bibitem{DrNicoletteWagner}
 N.~{Fritsch-Wagner Dr.}, {Private communication - ECG-validation and
-  consultation in medical lab} (2017).
+  consultation in medical lab}, 2017.
 
 \bibitem{Antonicelli-ECG}
 R.~Antonicelli, C.~Ripa, A.~M. Abbatecola, C.~A. Capparuccia, L.~Ferrara,
   L.~Spazzafumo, {Validation of the 3-lead tele-ECG versus the 12-lead tele-ECG
   and the conventional 12-lead ECG method in older people}, Journal of
-  Telemedicine and Telecare 18~(2) (2012) 104--108, pMID: 22267307.
+  Telemedicine and Telecare 18~(2)  104--108, 2012.
 \newblock \href {http://dx.doi.org/10.1258/jtt.2011.110613}
   {\path{doi:10.1258/jtt.2011.110613}}.
 
 \bibitem{FatimaMasterThesis}
 F.~{Sajid Butt}, {Fall-detection using machine learning techniques on
   ECG-signals}, Master's thesis, Frankfurt Univeristy of Applied Sciences -
-  Germany, (in progress) (2018).
+  Germany, (in progress), 2018.
 
 \bibitem{ECGNoise}
 U.~Banu, G.~{Patil Dr.}, F.~{Ruksar Dr.}, A survey on sources of noise and
@@ -146,11 +147,11 @@ U.~Banu, G.~{Patil Dr.}, F.~{Ruksar Dr.}, A survey on sources of noise and
 \bibitem{international2005medical}
 {International Electrotechnical Commission et al.}, Medical electrical
   equipment-part 1: General requirements for basic safety and essential
-  performance, IEC 60601-1: 2005.
+  performance, 2015.
 
 \bibitem{STAMPThesis}
 V.~{Balgos}, {A Systems Theoretic Application to Design for the Safety of
   Medical Diagnostic Devices}, Master's thesis, University of Missouri,
-  Columbia - USA (2012).
+  Columbia - USA, 2012.
 
 \end{thebibliography}
