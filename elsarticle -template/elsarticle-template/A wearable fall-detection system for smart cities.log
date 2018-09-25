@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  25 SEP 2018 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.5.8)  25 SEP 2018 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -701,7 +701,7 @@ l.161 		\item S
 File: Images/KozinaImpact.png Graphic file (type png)
 <use Images/KozinaImpact.png>
 Package pdftex.def Info: Images/KozinaImpact.png  used on input line 197.
-(pdftex.def)             Requested size: 226.44543pt x 181.27681pt.
+(pdftex.def)             Requested size: 237.76839pt x 190.3412pt.
  [9pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 
@@ -973,7 +973,7 @@ l.588
 File: Images/NormalECG1.png Graphic file (type png)
 <use Images/NormalECG1.png>
 Package pdftex.def Info: Images/NormalECG1.png  used on input line 592.
-(pdftex.def)             Requested size: 329.89438pt x 190.05005pt.
+(pdftex.def)             Requested size: 335.99075pt x 193.56213pt.
 
 [30pdfTeX warning (ext4): destination with the same identifier (name{figure.13}
 ) has been already used, duplicate ignored
@@ -1078,7 +1078,7 @@ blic/amsfonts/cm/cmti7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmti8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
 Output written on "A wearable fall-detection system for smart cities.pdf" (43 p
-ages, 1807900 bytes).
+ages, 1807903 bytes).
 PDF statistics:
  705 PDF objects out of 1000 (max. 8388607)
  595 compressed objects within 6 object streams
