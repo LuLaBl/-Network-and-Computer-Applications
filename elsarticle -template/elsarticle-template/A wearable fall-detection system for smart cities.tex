@@ -105,6 +105,7 @@ e-Health \sep fall-detection\sep Body Area Network \sep Event Processing Languag
 %\linenumbers
 
 \section{Introduction}
+\label{sec:introduction}
 Fall-detection is gaining in importance not only in aging societies, but also in the working society and in daily activities. According to the World Health Organization (WHO), 646,000 fatal falls are estimated to be the second leading cause of accidental or unintentional death worldwide each year. People over 65 years suffer the most fatal falls. Another high risk group is children. Taking into consideration their evolving developmental stages, the increasing curiosity to explore the environment or the inadequate adult supervision lead to fall-events \cite{WHO2018}.
 In everyday life we are also confronted with risk of falling. Working in hazardous working conditions is another risk factor for causing fall-events. An exemplary event could be a worker who falls during the night shift in the factory and no one is there to provide prompt assistance. Another example could be a technician which falls from height while maintaining windmills. Mostly windmills are installed in uninhabited areas where no immediate rescue measures can be taken. Considering these events the consequences can be fatal for the affected people. 
 The WHO stated that annually 37.3 million fall-events are severe enough to require medical treatment \cite{WHO2018}. Fall-events lead to the side effects of physical inactivity and loss of balance, especially among old people. Elderly people are scared to fall again and this uncertainty of movement increases the risk of repeated falls. 
@@ -125,8 +126,7 @@ In terms of smart cities our expectancy is to significantly provide an important
 	
 \end{itemize}
 
-The paper is structured as follows. Section \ref{sec:relatedwork} describes the related work regarding fall-detection. In this section a short overview about existing solutions and different approaches for fall-detection is given. Section \ref{sec:background} will describe the basic principles on which our ongoing fall-detection research is based which contains the basic knowledge about falls, CEP \cite{Esper:2016} and IoT-TEG tool \cite{Gutierrez2017, TesisGutierrez2017}. In the successive section (Section \ref{sec:fall-detectionPrototype}) a detailed description of the fall-detection prototype, including the generation of test events that includes the results of the fall-analysis are introduced. Additionally, this section contains the usage of the ECG-sensors and detected problems. Section \ref{sec:STAMP} will introduce the Hazard analysis method STAMP \cite{leveson2011engineering} which is applied on the fall-detection prototype.
-Finally, in Section \ref{sec:conclusion} a conclusion about this ongoing research is given, including some indications for improvement which could be applied in the future work.
+The paper is structured as follows. Section \ref{sec:relatedwork} describes the related work regarding fall-detection. In this section a short overview about existing solutions and different approaches for fall-detection is given. Section \ref{sec:background} will describe the basic principles on which our ongoing fall-detection research is based which contains the basic knowledge about falls, CEP \cite{Esper:2016} and IoT-TEG tool \cite{Gutierrez2017, TesisGutierrez2017}. In the successive section (Section \ref{sec:fall-detectionPrototype}) a detailed description of the fall-detection prototype, including the generation of test events that includes the results of the fall-analysis are introduced. Additionally, this section contains the usage of the ECG-sensors and detected problems. Section \ref{sec:STAMP} will introduce the Hazard analysis method STAMP \cite{leveson2011engineering} which is applied on the fall-detection prototype. Section \ref{sec:FindingsResearchQuestions} discusses the findings of the research questions of our ongoing research. Finally, in Section \ref{sec:conclusion} a conclusion about this ongoing research is given, including some indications for improvement which could be applied in the future work.
 
 \section{Related Work}
 \label{sec:relatedwork}
@@ -650,6 +650,33 @@ To apply STAMP the following steps must be followed:
 	
 \end{itemize}
 	It is important to emphasize that this is only the beginning of a complete STAMP analysis, which represents a fraction of the system.  We will use it for all parts of the complete architecture.
+	
+	
+\section{Findings with respect to the research questions}
+\label{sec:FindingsResearchQuestions}
+Our ongoing research solved part of the research questions (see Section \ref{sec:introduction}). The following subsections relate our results to the corresponding research questions.
+
+\subsection{Will the integration of medical sensors improve the reliability of the fall detection system?}
+\label{subsec:integrationMedicalSensors}
+Considering the reliability in relation to the integration of medical sensors in our fall detection system, by analyzing the literature \cite{Gjoreski2014} it can be concluded that medical parameters significantly enhance the capabilities of the fall-detection. Medical consultation with physicians \cite{DrNicoletteWagner} confirmed that the data acquisition of medical parameters in parallel to the acceleration data cover a fall-event initiated by medical conditions comprehensively. Our ongoing tests performed with the ECG-sensor harness indicate that the ECG provides relevant information for an accurate fall detection.  Current work analyzes disturbances of the ECG-signal and explores the use of machine learning methods to detect relevant normal and abnormal medical patterns. 
+
+\subsection{Can the system achieve a high level of acceptance among people?}
+\label{subsec:acceptanceSystem}
+According to the feedback from our test subjects, our system has achieved a high level of acceptance. The reasons for the positive feedback were the following aspects:
+\begin{itemize}
+	\item The hardware architecture is flexible and adaptable to any body shape.
+	\item The current prototype has decreased in size.
+	\item With the belt and harness solution, the system is not visible from the outside and can be worn comfortably as a belt. People feel comfortable because they do not attract public attention by wearing the system. These increases patient compliance.
+\end{itemize}
+
+\subsection{Does the integration of our system as an e-health service in smart cities contribute to an improved quality of life for the population?}
+\label{subsec:e-healthSmartCity}
+The changing societies in many countries result in more flexible lifestyles also for elderly people. An e-health system in a smart city providing reliable fall-detection and real time emergency response will greatly improve the quality of live. Our ongoing research plans to focus on the detection of fall precursors in the future.  
+
+\subsection{How does the ECG-signal change during a fall situation? - Can relevant patterns be extracted that lead to a reliable fall-detection?}
+\label{subsec:ECGPattern}
+Because of the to be achieved patient compliance (see Subsection \ref{subsec:acceptanceSystem}) the ECG-harness sensors are not firmly attached to the human body as would be the case in a clinical setting. Therefore, the ECG-signal is disturbed during the fall-event. Nevertheless, preliminary results, give diagnostic information ahead and after the fall. Current research analyzes the ECG-sensors' signals and explores different methods to improve the signal quality.  This is a base for the following pattern recognition.	
+  
 
 \section{Conclusion}
 \label{sec:conclusion}
@@ -661,7 +688,7 @@ The test measurements carried out with the additional ECG-sensor were positive a
 
 However, first the synchronization problem of the BAN must be solved, which can compromise the system's functionality. In order to solve this problem, a new hardware platform will be used, which contains a real time operating system, which facilitates the synchronization of different tasks in a wireless sensor network. In addition, the new microcontroller should also meet other requirements of patient compliance.
 
-
+Referring to the questions with which our ongoing research was confronted, several aspects of the research questions of this paper (see Section \ref{sec:introduction}) have been solved (see Section \ref{sec:FindingsResearchQuestions}). Due to the complex nature of the problem, ongoing research is being done to enhance the quality of the solution.
 
 \section*{Acknowledgment}
 We would like to thank the voluntary test subjects for the time they spent testing the fall detection prototype. The feedback and test results are very valuable for the further development of the detection system. We would particularly like to thank Dr.med.Nicolette Fritsch-Wagner for her assistance during the validation of our ECG sensor and for explaining how important the use of medical sensors (ECG sensors) can be for the detection of falls. 
