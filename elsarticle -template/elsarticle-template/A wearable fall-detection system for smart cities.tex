@@ -121,7 +121,6 @@ In terms of smart cities our expectancy is to significantly provide an important
 \begin{itemize}
 	\item Will the integration of medical sensors improve the reliability of the fall detection system?
 	\item Can the system achieve a high level of acceptance among people?
-	\item Does the integration of our system as an e-health service in smart cities contribute to an improved quality of life for the population?
 	\item How does the ECG-signal change during a fall situation? - Can relevant patterns be extracted that lead to a reliable fall detection?
 	
 \end{itemize}
@@ -295,9 +294,7 @@ min="0" max="500" precision="1"></field>
 The defined event type contains three properties: \texttt{created\_at},
 \texttt{entry\_id} and \texttt{temperature}. These properties are defined as
 fields in the event type definition. The \texttt{created\_at} field is complex
-type and \texttt{entry\_id} and \texttt{temperature} are simple types. The
-property that is evaluated in the Example~\ref{eventTypeDef} queries is
-\texttt{temperature}.
+type and \texttt{entry\_id} and \texttt{temperature} are simple types. 
 
 Apart from the mentioned challenges that IoT-TEG solves in order to test 
 event-processing programs, it incorporates a specific functionality
@@ -340,15 +337,15 @@ The belt solution reflects the above criteria of a safety-critical systems. The 
 \end{figure}
 
 As an example, a person is taken who has suffered a frontal fall because of a fainting. Analyzing the fall-event, it can be determined that the fall caused by a fainting leads firstly to a left rotation of the person's body (pre-fall phase). This event triggers the fall of the person (impact to the ground). Projecting this fall event on the reference scheme (see Figure \ref{fig:ReferenceScheme}), the body's orientation (e.g. left rotation) can be determined on the basis of the individual acceleration values ($\alpha_x$,  $\alpha_y$,  $\alpha_z$). Additionally, the acceleration magnitude (see Formula \ref{eq:acel}) can be used for the detection of the impact which is categorized by a temporary increase in the acceleration, as described in the previous Section \ref{sec:background}. Using the EPL of Espertech query (Example \ref{CEPPattern}) stated in the Subsection \ref{subsec:CEP} the system is capable to detect a general fall-event based on the physical principle proposed by \cite{Kozina}.
-Taking into consideration the test protocol stated in Section \ref{sec:background} typical fall-events (e.g. rolling out of the bed) in nursing homes and hospitals can be detected by this solution. In the subsequent subsection, the behavioral analysis of the acceleration values during the fall against wall (FAW) is presented. Additionally, test events are generated to simulate the FAW fall type.
+Taking into consideration the test protocol stated in Section \ref{sec:background} typical fall-events (e.g. rolling out of the bed) in nursing homes and hospitals can be detected by this solution. In the subsequent subsection, the behavioral analysis of the acceleration values during one of the mentioned typical fall-events is presented, the \textit{fall against wall} (FAW). Additionally, test events are generated to simulate the FAW fall-type.
 
 \subsection{Fall simulation test events}
 
 The fall to generate the test events consists on the impact of the person with 
-a wall and falling on the knees and then on the chest: \textit{fall against wall} (FAW). 
+a wall and falling on the knees and then on the chest: FAW. 
 In this study we have used two healthy subjects, and we have recorded falls with all 
 possible realism while also trying to avoid risks. They have been doing fall test for a period 
-of 2 minutes, the FAW fall type. The analyzed data and videos can be found in~\cite{FallRepo}.
+of 2 minutes, the FAW fall-type. The analyzed data and videos can be found in~\cite{FallRepo}.
 
 In this analysis the following steps have been done:
 
@@ -415,7 +412,7 @@ to be defined using the \texttt{<field>} element. The fall event contains one at
 consequence of the previous fall-study. Given that the acceleration values follow a specific behavior, it is necessary to include 
 the \texttt{custom\_behavior} property in the \texttt{<field>} element to define the behavior of any event attribute; 
 in this study, the acceleration. In the \texttt{custom\_behavior} property the path to the file that includes the behavior of the 
-event attribute has to be written. The Example~\ref{FallEvent} shows the complete fall event definition (FallEventType).
+event attribute has to be written. The Example~\ref{FallEvent} shows the complete fall-event definition (FallEventType).
 
 \begin{lstlisting}[basicstyle=\ttfamily\footnotesize,language=XML,caption={Fall event type definition},label=FallEvent]
 <?xml version="1.0" encoding="UTF-8"?>
@@ -668,11 +665,8 @@ According to the feedback from our test subjects, our system has achieved a high
 	\item The current prototype has decreased in size.
 	\item With the belt and harness solution, the system is not visible from the outside and can be worn comfortably as a belt. People feel comfortable because they do not attract public attention by wearing the system. These increases patient compliance.
 \end{itemize}
-
-\subsection{Does the integration of our system as an e-health service in smart cities contribute to an improved quality of life for the population?}
-\label{subsec:e-healthSmartCity}
-The changing societies in many countries result in more flexible lifestyles also for elderly people. An e-health system in a smart city providing reliable fall-detection and real time emergency response will greatly improve the quality of live. Our ongoing research plans to focus on the detection of fall precursors in the future.  
-
+ 
+ 
 \subsection{How does the ECG-signal change during a fall situation? - Can relevant patterns be extracted that lead to a reliable fall-detection?}
 \label{subsec:ECGPattern}
 Because of the to be achieved patient compliance (see Subsection \ref{subsec:acceptanceSystem}) the ECG-harness sensors are not firmly attached to the human body as would be the case in a clinical setting. Therefore, the ECG-signal is disturbed during the fall-event. Nevertheless, preliminary results, give diagnostic information ahead and after the fall. Current research analyzes the ECG-sensors' signals and explores different methods to improve the signal quality.  This is a base for the following pattern recognition.	
@@ -693,7 +687,7 @@ Referring to the questions with which our ongoing research was confronted, sever
 \section*{Acknowledgment}
 We would like to thank the voluntary test subjects for the time they spent testing the fall detection prototype. The feedback and test results are very valuable for the further development of the detection system. We would particularly like to thank Dr.med.Nicolette Fritsch-Wagner for her assistance during the validation of our ECG sensor and for explaining how important the use of medical sensors (ECG sensors) can be for the detection of falls. 
 
-This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+Paper partially funded by The Ministry of Economy and Competitiveness (Spain) and the FEDER Fund, under the National Program for Research, Development and Innovation, Societal Challenges Oriented, Project DArDOS TIN2015-65845-C3-3-R.
 
 
 \section*{Datasets}
@@ -704,7 +698,7 @@ In the references list \cite{FallRepo} is a dataset repository which contains th
 	\item IoT-TEG generated test events
 	\item Fall-simulation video clip
 \end{itemize}
-
+\newpage
 \section*{References}
 
 \bibliography{mybibfile}
